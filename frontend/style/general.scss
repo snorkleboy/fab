@@ -1,0 +1,267 @@
+@import "./colorScheme";
+$infoWindowHeight:500px;
+$infoWindowHeightSmall:200px;
+
+$infoWindoWidth:350px;
+$leftmenuHeight:72vh;
+.text-lightGrey{
+    color:  $text-lightgrey;
+}
+.leftMenuHeight{
+    height:$leftmenuHeight;
+}
+
+.text-grey{
+    color: $text-grey
+}
+.italic{
+    font-style: italic;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.grid-row {
+    display: grid;
+}
+.posRel{
+    position: relative;
+}
+.posAbs{
+    position: absolute;
+    z-index: 10;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.border-bottom{
+    border-bottom: 1px solid $border-grey2;
+}
+.border-bottom-light{
+    border-bottom: 1px solid $border-grey;
+}
+.border{
+    border:1px solid grey;
+}
+.border-l{
+    border:1px solid grey;
+}
+.padding-left30{
+    padding-left:30px;
+}
+.margin{
+    margin: 1%;
+}
+.margin-5px{
+    margin:5px;
+}
+
+.padding{
+    padding: 1%;
+}
+.padding-5px{
+    padding:5px;
+}
+.list-pad > li{
+    padding: 1%;
+}
+.width-100{
+    width:100%;
+}
+.width-50{
+    width:50%;
+}
+.width-30{
+    width:30%
+}
+.width-70{
+    width:70%
+
+}
+.left0px{
+    left:0px;
+    transition: left 1s ease-out;
+}
+.left-350px{
+    left:-350px;
+    transition: left 1s ease-in;
+}
+.top56{
+    top: 56px;
+}
+.top10{
+    top:10%;
+}
+.top50{
+    top:50%;
+}
+.left80{
+    left:80%;
+    transition:left 1s ease-out;
+}
+.left90{
+    left:90%;
+    transition:left 1s ease-out;
+}
+.left95{
+    left:95%;
+    transition:left 1s ease-out;
+}
+.left100{
+     left:100%;
+    transition:left 1s ease-out;
+}
+.right0{
+    right:0%;
+    transition:right 1s ease-out;
+}
+.right100{
+    right:100%;
+    transition:right 1s ease-out;
+}
+.right66{
+    right:66%;
+    transition:right 1s ease-out;
+}
+.right80{
+    right:80%;
+    transition:right 1s ease-out;
+}
+.right90{
+    right:90%;
+    transition:right 1s ease-out;
+}
+.whiteBackground{
+    background-color: white;
+}
+.greyBackground{
+    background-color: $grey-background;
+}
+.scrollable{
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+
+}
+.heightMax{
+    height: 78vh;
+}
+.listHeight{
+    height: 74vh;
+
+}
+.text-small{
+    font-size: small;
+}
+.text-normal{
+    font-size: 12px;
+}
+.text-big{
+    font-size: 14px;
+}
+.text-bigger{
+    font-size: x-large;
+}
+.bold{
+    font-weight: 700;
+}
+.width-20{
+    width: 20px;
+}
+.height-60{
+    height: 60px;
+}
+.item{
+    color: $black;
+}
+.icon{
+    width: 50px !important;
+    height: 50px !important;
+}
+.markerIcon{
+    width: 30px !important;
+    height: 45px !important;
+}
+.card{
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.closeButton{
+    width: 30px;
+    height: 38px;
+    background-color: white;
+}
+
+.align-right{
+    align-items: right;
+}
+
+.blueLink{
+    color: $blue;
+    transition:color .3s;
+}
+.blueLink:hover{
+    color: $blue-hover;
+}
+.activeLocation{
+    background-color:$white;
+    transition: .6s background-color ease-out;
+}
+.activeLink{
+    color: $red;
+}
+
+
+
+.devider{
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.devider div{
+    //border-bottom: 1px solid black;
+}
+.devider i{
+    width: 20px;
+    position: relative;
+    top: 6px;
+    cursor: pointer;
+}
+.devider *{
+    width: 100%;
+}
+
+.scheduleButton{
+    min-height: 32px;
+    height: 32px;
+    font-size: 14px;
+    border: 1px solid #357EBD;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, #6a97c4,#4a77a4);
+    width: 92px;
+    text-align: center;
+    color: white;
+    transition:.3s color, .4s background-color;
+    font-weight: 400;
+}
+.scheduleButton:hover{
+    background-color: white;
+    transition:.3s color, .4s background-color;
+
+}
+.doubleColumn{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.column1{
+    grid-column: 1;
+}
+.column2{
+    grid-column: 2;
+}
+
