@@ -8,11 +8,10 @@ const AsyncLoader = (paths)=>{
         // path = "mainApp.bundle.js"
 
         // path = "webpackOutput/mainApp.bundle.js"
-        path = "./baseApp/mainApp"
-        import(`${path}`).catch(e=>console.log(e));
+        // import(`${path}`).catch(e=>console.log(e));
         console.log({ path });
         return Loadable({
-            loader: () => import(`${path}`).catch(e=>console.log(e)),
+            loader: () => import(/* webpackChunkName: 'asyncComponents/[request]' */ `./baseApp/${path}`).catch(e=>console.log(e)),
             loading:() => <h1> "loading" </h1>
         })
     }

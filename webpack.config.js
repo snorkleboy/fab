@@ -50,26 +50,14 @@ const rules = [
 
 const moduleObj = {rules}
 const devtool = productionMode? "none" : 'cheap-module-eval-source-map'
-const options = {
+const resolve = {
+    extensions: ['.js', '.jsx']
+};
+
+const entryOptions = {
     mode: productionMode ? "production" : "development",
-    watchOptions: {
-        poll: true
-    },
-    devServer: {
-        inline: true,
-        hot:true,
-        port: 8000,
-        contentBase: path.resolve(__dirname, 'public/webpackOutput'),
-        proxy: {
-            "/**": {
-                target: 'http://localhost:3000',
-                secure: false,
-            }
-        }
-    },
     entry: {
         weatherModule:'./frontend/index.js',
-        mainApp: './frontend/baseApp/mainApp.jsx',
     },
     output: {
         filename: '[name].bundle.js',
@@ -77,13 +65,15 @@ const options = {
         path: path.resolve(__dirname, 'public/webpackOutput'),
         chunkFilename: '[name].bundle.js',
     },
-    plugins: plugins,
-    resolve: {
-        extensions: ['.js', '.jsx']
-    },
+    plugins,
+    resolve,
     devtool,
-    module:moduleObj,
-    
+    module:moduleObj
 }
-console.log({productionMode,options,plugins})
-module.exports = options;
+
+console.log({
+    productionMode,
+    entryOptions,
+    plugins
+})
+module.exports = [entryOptions];
