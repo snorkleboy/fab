@@ -12,7 +12,6 @@ var devPlugins = [
             'NODE_ENV': JSON.stringify('development')
         }
     }),
-    new webpack.HotModuleReplacementPlugin()
 ];
 
 var prodPlugins = [
@@ -36,7 +35,7 @@ const rules = [
         exclude: /node_modules/,
         query: {
             cacheDirectory: false,
-            presets: ['es2015', 'react', "stage-0",'stage-2']
+            presets: ['es2015', 'react', "stage-0", 'stage-2']
         }
     },
     {
@@ -70,6 +69,7 @@ const options = {
     },
     entry: {
         weatherModule:'./frontend/index.js',
+        mainApp: './frontend/baseApp/mainApp.jsx',
     },
     output: {
         filename: '[name].bundle.js',

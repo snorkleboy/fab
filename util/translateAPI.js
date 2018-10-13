@@ -1,4 +1,4 @@
-import {actionTypes} from "../frontend/store/actions/mapActions/mapActions";
+import {actionTypes} from "../frontend/baseApp/store/actions/mapActions/mapActions";
 import {countWorkOrders} from "./workOrder";
 
 export function ensure(action) {
