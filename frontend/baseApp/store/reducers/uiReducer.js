@@ -1,7 +1,7 @@
 import {actionTypes as  mapActions}from '../actions/mapActions/mapActions'
 import {actionTypes as uiActions} from '../actions/uiActions/uiActions'
 const actionTypes = Object.assign({},mapActions,uiActions)
-import Message from '../../components/messageDisplayer/Message'
+import Message from 'UILibrary/messageDisplayer/Message'
 
 const _uiDefault = ()=>({
     clickSelected:null,

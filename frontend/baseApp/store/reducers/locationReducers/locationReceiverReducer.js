@@ -1,5 +1,5 @@
 import {actionTypes} from '../../actions/mapActions/mapActions'
-import {addWorkOrderToLocation} from "../../../../../util/workOrder";
+import {addWorkOrderToLocation} from "../../../../util/workOrder";
 import * as lodash from 'Lodash';
 const _locations = ()=>({
     locations:{},

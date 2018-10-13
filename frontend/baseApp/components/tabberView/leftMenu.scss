@@ -1,0 +1,77 @@
+@import "../../style/colorScheme";
+.mapMenu{
+  width: 350px;
+  height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.leftMenuHeader{
+  height: 45px;
+  background-color:$grey-background;
+  justify-content: space-between;
+  box-shadow: inset 0px 15px 5px -15px $text-grey-light;
+}
+$headerTextSize: 12px;
+.leftMenuHeader .fa{
+  color: $blue-text-light;
+  font-size: $headerTextSize;
+  margin-right: 3px;
+}
+.leftMenuHeader h1{
+  font-size: $headerTextSize;
+  color: $blue-text-light;
+  font-weight: 300;
+  line-height: 12px;
+}
+.leftMenuHeader div{
+  margin: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.attached.tabular.menu{
+  margin-top: 0px;
+  border-top: 1px solid $border-grey !important;
+  border-bottom: 0px;
+
+  background-color:$grey-background;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#Locationstab{
+  border-right: 1px solid $border-grey !important;
+}
+.ui.attached.tabular.menu .active.item,
+.ui.attached.tabular.menu .item{
+  border: 0px !important;
+  background-color:$grey-background !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.ui.attached.tabular.menu .item{
+  color: $text-grey-light;
+}
+.ui.attached.tabular.menu .active.item{
+  color: $text-grey !important;
+}
+
+
+.mapMenu >.leftMenuHeader,
+.mapMenu >.ui.top.attached.tabular.menu,
+.mapMenu >.ui.bottom.attached.segment button{
+  padding-left: 30px;
+}
+.slideIcon{
+  box-shadow: inset 10px 0 15px -15px black;
+  border-right: 1px solid $text-grey-light;
+}
+.slideIcon i{
+  font-size: 18px;
+  height: fit-content;
+  position: relative;
+  left: 24%;
+  top: 35%;
+  color: $text-grey;
+}

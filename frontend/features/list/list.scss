@@ -1,0 +1,32 @@
+@import "../../style/colorScheme";
+
+.locationList{
+    width: 100%;
+}
+.locationList {
+    border-top: 1px solid $border-grey !important;
+}
+.locationList .scheduleButton{
+    position: relative;
+    bottom: 50px;
+    left: 67%;
+}
+.locationList > ul{
+    background-color:$grey-background;
+}
+
+.scrollFix {
+    line-height: 1.35;
+    overflow: hidden;
+}
+.workOrderBorder{
+    border-top: 1px solid $border-grey;
+    border-radius: 4px;
+    width: 310px;
+}
+
+div.ui.bottom.attached.segment{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

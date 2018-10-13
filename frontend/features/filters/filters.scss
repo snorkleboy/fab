@@ -1,0 +1,197 @@
+@import "../../style/colorScheme";
+.mainFilters{
+    height: 20vh;
+    padding-right: 20px;
+}
+$grid-template-columns: 30px 1fr;
+.mainFilters.grid-row{
+    grid-template-columns:$grid-template-columns;
+    grid-auto-rows: min-content;
+    margin-bottom: 5px;
+}
+
+.mainFilters.grid-row> span{
+    grid-column: 2;
+}
+.mainFilters.grid-row> span:last-child{
+    margin-bottom: 45px;
+}
+.dropdown-helper{
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+
+.activeFilter,
+a.ui.activeFilter.label,
+a.active.item.activeFilter{
+    background-color: $active-pill !important;
+    border-color: $active-pill-borderColor !important;
+}
+
+.activeFilter-empty,
+a.ui.activeFilter-empty.label,
+a.active.item.activeFilter-empty{
+    background-color: $active-pill-empty !important;
+    border-color: $active-pill-empty-borderColor !important;
+
+}
+
+.fadedGrey{
+    background-color: $border-grey;
+}
+
+.dropdown-helper{
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.closeButtonOpen{
+    background-image:url("http://svn.utdanning.no/projects/iktipraksis.no/sites-all/trunk/themes/iktipraksis/img/arrow-left.png");
+}
+.closeButtonClosed{
+    background-image:url("https://image.flaticon.com/icons/png/128/118/118740.png");
+}
+
+.precipitationFilter{
+    position:relative;
+}
+
+.precipitationFilter button{
+    position:relative;
+    left: 80%;
+    bottom: 30px;
+}
+.leftDate .rdtPicker{
+    right: 0%;
+}
+.rightDate .rdtPicker{
+    right: 0%;
+}
+
+.ui.fluid.selection.dropdown{
+    min-height: 22px !important;
+    height: fit-content !important;
+    padding: 2px;
+
+    border: 1px $border-grey;
+    border-radius: 3px;
+    padding: 2px 8px;
+    background-color: white;
+    border: 1px solid $border-grey;
+    margin-bottom: 15px;
+
+}
+.ui.multiple.search.dropdown>input.search{
+    height: 12px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.dropdownFilter i{
+    //margin: 0 !important;
+    padding: 0 !important;
+}
+.ui.dropdown span h1{
+    padding-bottom: 15px;
+    color: $blue-text-light;
+}
+
+.menu>.item{
+    height: 30px !important;
+    padding: 0px;
+}
+div.text,
+span.text{
+    font-size: 9px;
+}
+div.text{
+    padding-left: 7px;
+    line-height: 15px;
+    display: block !important;
+}
+.ui.label{
+    font-size: 12px !important;
+}
+.ui.activeFilter-empty.label,
+.ui.activeFilter.label{
+    padding: 0px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin: 0px;
+    margin-right: 10px;
+}
+.ui.label .delete.icon{
+    height: 12px !important;
+    width: fit-content !important;
+}
+.ui.selection.dropdown .menu>.item,
+.ui.dropdown .menu>.active.item,
+.ui.dropdown .menu>.item{
+    padding: 0px !important;
+    margin: 0px !important;
+    height: fit-content !important;
+    padding-left: 15px !important;
+}
+.ui.active.visible.selection.dropdown{
+    background-color: $grey-dark-background !important;
+    transition: .15s background-color ease-out;
+}
+.ui.active.visible.selection.dropdown{
+    transition: .15s background-color ease-out;
+}
+.search .default.text{
+    padding-top: 4px !important;
+}
+.default.text {
+    color: $text-grey-light !important;
+    padding-top: 0px !important;
+    padding-bottom:0px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 2px !important;
+}
+.ui.fluid.dropdown>.dropdown.icon{
+    height: 2px !important;
+    width: 10px !important;
+    padding: 0px;
+    
+}
+
+.checkbox h2{
+    font-size: 12px;
+    margin-left: 6px;
+    margin-bottom: 15px;
+}
+.calendar *{
+    font-size: 12px;
+    color:$text-grey;
+}
+.calendar input{
+    background-color: white;
+    width: 80px;
+    
+}
+.calIcon{
+    font-size: 12px;
+    border:1px solid #ddd;
+    position: relative;
+    top: 1px;
+    border-radius: 0 3px 3px 0;
+    height: 20px;
+    background-color: $grey-dark-background;
+
+}
+.calIcon .fas{
+    font-size: 10px;
+    color: $text-grey2;
+}
+#WorkOrderStatus div.item{
+    height: 30px !important;
+}
+
+.ui.dropdown .menu>.item>.image, .ui.dropdown .menu>.item>img, .ui.dropdown>.text>.image, .ui.dropdown>.text>img{
+    //display: block !important;
+    width: auto;
+    margin-top: 0  !important;
+    margin-bottom: 0  !important;
+    max-height: 2em;
+}

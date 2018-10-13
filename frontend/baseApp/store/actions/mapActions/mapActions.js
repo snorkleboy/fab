@@ -1,5 +1,5 @@
 import * as apiCalls from '../../../../util/apiCalls'
-import {ensure} from "../../../../../util/translateAPI";
+import {ensure} from "../../../../util/translateAPI";
 
 export const actionTypes = {
     receiveLocations : "RECEIVE_LOCATIONS",

@@ -51,19 +51,26 @@ const rules = [
 const moduleObj = {rules}
 const devtool = productionMode? "none" : 'cheap-module-eval-source-map'
 const resolve = {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx','.scss'],
+    alias: {
+        baseApp: path.resolve(__dirname, './frontend/baseApp/'),
+        baseStyles: path.resolve(__dirname, './frontend/baseApp/styles'),
+        baseRedux: path.resolve(__dirname, './frontend/baseApp/store'),
+        UILibrary: path.resolve(__dirname, './frontend/UILibrary/'),
+        util: path.resolve(__dirname, './frontend/util/'),
+        frontend: path.resolve(__dirname, './frontend/'),
+    }
 };
-
 const entryOptions = {
     mode: productionMode ? "production" : "development",
     entry: {
-        weatherModule:'./frontend/index.js',
+        WeatherModuleEntry:'./frontend/entry.jsx',
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].js',
         publicPath: '/webpackOutput/',
         path: path.resolve(__dirname, 'public/webpackOutput'),
-        chunkFilename: '[name].bundle.js',
+        chunkFilename: '[name].chunk.js',
     },
     plugins,
     resolve,

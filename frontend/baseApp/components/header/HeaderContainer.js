@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import React from 'react';
-import Header from './Header'
+import Header from './header'
 import {reset} from "../../store/actions/mapActions/mapActions";
 import {deleteUser} from "../../store/actions/sessionActions";
 

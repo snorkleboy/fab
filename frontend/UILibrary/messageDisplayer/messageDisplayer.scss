@@ -1,0 +1,55 @@
+@import "../../baseApp/style/colorScheme";
+.messageContainer{
+  max-width: 20vw;
+  min-width: fit-content;
+  margin: auto;
+}
+.messageContainer *{
+  transition: 1s background-color, 1s color ;
+  color: inherit;
+}
+.notVisible{
+  color: transparent ;
+  background-color: rgba(255, 0, 0, 0) !important;
+  transition: 1s background-color, 1s color,1s border  !important;
+  border: 0 !important;
+}
+.notVisible *{
+  color: transparent ;
+  background-color: rgba(255, 0, 0, 0) !important;
+  transition: 1s background-color, 1s color, 1s border !important;
+  border: 0 !important;
+  cursor: inherit;
+}
+.displayNone{
+  display: none;
+}
+.messageContainer>*{
+  padding: 4px 60px;
+  margin: 10px;
+  font-size: 13px;
+}
+.messageContainer .errorMessage{
+  background-color: $error-red;
+  border:1px solid $error-red-border;
+  transition: 1s background-color, 1s color, 1s border;
+  color: $text-grey-dark;
+}
+.messageContainer .systemMessage{
+  background-color: #47b2f3;
+  border:1px solid $blue-dark;
+  transition: 1s background-color, 1s color ,1s border;
+  color: $white;
+  
+}
+.messageContainer .dev{
+  background-color: #eab4f5;
+
+}
+
+.messageContainer .disappear{
+  margin: auto;
+  position: relative;
+  left: 25px;
+  top: 1px;
+}

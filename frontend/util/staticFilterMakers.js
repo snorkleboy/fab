@@ -1,4 +1,4 @@
-import {statusList, workOrdersStatusMap} from "../../util/workOrder";
+import {statusList, workOrdersStatusMap} from "./workOrder";
 
 export function makeWeatherFilters(){
     const baseRanges = [
