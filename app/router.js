@@ -8,7 +8,7 @@ const componentController = require("./controllers/componentController");
 router.use('/data', dataController);
 router.use('/login', loginContoller);
 router.use('/webpackOutput',(req,res,next)=>{
-    console.log(req.path, "js?", req.path.includes(".js"), "going to component Controller")
+    console.log(req.path, "js?:"+ req.path.includes(".js"), "going to component Controller")
     if(req.path.includes(".js")){
         componentController(req, res, next);
     }else{

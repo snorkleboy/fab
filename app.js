@@ -10,7 +10,6 @@ const port = process.env.PORT || process.argv[2] || '3000';
 function listenHandler() {
     console.log(`bound to port ${port} and listening`)
 }
-app.use(cookieParser());
 
 app.use(cookieParser());
 // app.use(logger('dev'));
