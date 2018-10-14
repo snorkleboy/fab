@@ -1,4 +1,5 @@
 const {subscribers,roles} = require( './data')
+const filterSchemas = require("../../frontend/features/filters/schemas/schemas")
 const features = []
 const map = {};
 
@@ -34,25 +35,25 @@ map[subscribers[0]][roles[2]]  = {
 map[subscribers[1]][roles[0]]  = {
     "tabberView":[
         {path:"list/listContainer.js",},
-        {path:"filters/filterButtonsContainer.js",props:{}}
+        {path:"filters/filterButtonsContainer.js",props:{schema:{...filterSchemas.defaultSchema,...filterSchemas.bvSchema}}}
     ]
 }
 map[subscribers[1]][roles[1]]  = {
     "tabberView":[
-        {path:"filters/filterButtonsContainer.js"}
+        {path:"filters/filterButtonsContainer.js",props:{schema:{...filterSchemas.defaultSchema,...filterSchemas.weatherSchema,...filterSchemas.bvSchema}}}
     ]
 }
 map[subscribers[1]][roles[2]]  = {
     "tabberView":[
         {path:"list/listContainer.js",props:{}},
-        {path:"filters/filterButtonsContainer.js"}
+        {path:"filters/filterButtonsContainer.js",props:{schema:{...filterSchemas.defaultSchema}}}
     ]
 }
 
 map[subscribers[2]][roles[0]]  = {
     "tabberView":[
         {path:"list/listContainer.js",props:{}},
-        {path:"filters/filterButtonsContainer.js"}
+        {path:"filters/filterButtonsContainer.js",props:{schema:{...filterSchemas.defaultSchema}}}
     ]
 }
 map[subscribers[2]][roles[1]]  = {
@@ -63,7 +64,7 @@ map[subscribers[2]][roles[1]]  = {
 map[subscribers[2]][roles[2]]  = {
     "tabberView":[
         {path:"list/listContainer.js",props:{}},
-        {path:"filters/filterButtonsContainer.js"}
+        {path:"filters/filterButtonsContainer.js",props:{schema:{...filterSchemas.defaultSchema,...filterSchemas.weatherSchema}}}
     ]
 }
 module.exports = resolver;

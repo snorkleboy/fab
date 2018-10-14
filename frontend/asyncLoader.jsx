@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Loadable from 'react-loadable';
-
+import {DropDownFilter, PrecipitationFilter} from "UILibrary/filterComponents/filterComponents"
 
 const featurePath = "features"
 const featureMap = {};
+featureMap["ui"] =  {
+    PrecipitationFilter:PrecipitationFilter,
+        DropDownFilter:DropDownFilter
+};
 function AsyncLoader (paths){
     const components = paths.map(path=>{
         const comp = Loadable({
@@ -37,7 +41,8 @@ AsyncLoader.LoadFeatures = function(featureSchema){
                 loader: () => import(
                     /* 
                     webpackChunkName: 'asyncComponents/[request]',
-                    webpackMode: "eager", 
+                    webpackMode: "eager",
+                    webpackPrefetch: true 
                     */
                     `./features/${featureObj.path}`
                     )
@@ -49,6 +54,7 @@ AsyncLoader.LoadFeatures = function(featureSchema){
         })
     })
 }
+
 let key = 0;
 AsyncLoader.getFeature = (name)=>{
     return featureMap[name]? featureMap[name]: [];//.map(C=><C key={key++ + Date.now()} name={"loader "+key}/>) 

@@ -3,6 +3,7 @@ import React from "react";
 import CollapsibleLabel from 'UILibrary/uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel'
 import style from './filters.scss'
 import dateStyle from './datepicker.scss'
+import AsyncLoader from "frontend/asyncLoader";
 
 const maxItemsInDropdown = 15;
 export default class FilterButtons extends React.Component{
@@ -21,8 +22,9 @@ export default class FilterButtons extends React.Component{
                         <span id={displayName.replace(/ /g,"")}>
                             <CollapsibleLabel label={displayName}>
                                 {entries.map(entry=>{
+                                    const Component = AsyncLoader.getFeature("ui")[entry.component]
                                     return (
-                                        <entry.component
+                                        <Component
                                             selectObjs={this.props.selectObjs}
                                             locations={this.props.locationArr}
                                             setFilter={this.props.setFilter}
