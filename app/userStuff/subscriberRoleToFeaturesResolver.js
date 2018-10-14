@@ -12,8 +12,8 @@ subscriberRoleToFeaturesMap[subscribers[0]][roles[0]] = []
 subscriberRoleToFeaturesMap[subscribers[0]][roles[1]] = [baseFeatures.listView]
 subscriberRoleToFeaturesMap[subscribers[0]][roles[2]] = [baseFeatures.listView, baseFeatures.listView]
 
-subscriberRoleToFeaturesMap[subscribers[1]][roles[0]] = [baseFeatures.filterView.withDefault().withWeather()]
-subscriberRoleToFeaturesMap[subscribers[1]][roles[1]] = [baseFeatures.listView,baseFeatures.filterView.withDefault()]
+subscriberRoleToFeaturesMap[subscribers[1]][roles[0]] = [baseFeatures.listView,baseFeatures.filterView.withDefault().withWeather()]
+subscriberRoleToFeaturesMap[subscribers[1]][roles[1]] = [baseFeatures.filterView.withDefault()]
 subscriberRoleToFeaturesMap[subscribers[1]][roles[2]] = [baseFeatures.listView]
 
 subscriberRoleToFeaturesMap[subscribers[2]][roles[0]] = [baseFeatures.listView,baseFeatures.filterView.withDefault().withWeather().withBVFilters()]
