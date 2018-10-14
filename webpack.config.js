@@ -51,6 +51,7 @@ const devtool = productionMode? "none" : 'cheap-module-eval-source-map'
 const resolve = {
     extensions: ['.js', '.jsx','.scss'],
     alias: {
+        app:path.resolve(__dirname, './app'),
         baseApp: path.resolve(__dirname, './frontend/baseApp/'),
         baseStyles: path.resolve(__dirname, './frontend/baseApp/styles'),
         baseRedux: path.resolve(__dirname, './frontend/baseApp/store'),

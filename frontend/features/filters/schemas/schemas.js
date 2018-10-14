@@ -4,3 +4,4 @@ const defaultSchema = require("./filterSchema");
 module.exports = {
     bvSchema,weatherSchema,defaultSchema
 }
+

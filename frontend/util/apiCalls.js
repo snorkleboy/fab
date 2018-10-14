@@ -11,7 +11,6 @@ export function fetchResetLocations(){
 }
 export function postUser(user){
     const options = makeopts(user,"POST");
-    console.log({user});
     return fetch(`./login/${user.subscriber}/${user.role}`,options)
         .then((res) => {
             return res.json()
