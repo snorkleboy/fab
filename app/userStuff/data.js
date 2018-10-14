@@ -1,5 +1,5 @@
 const subscribers = ["skelitor", "diana", "bubblegum"];
-const roles = ["princess", "food"]
+const roles = ["princess", "food","admin"]
 module.exports.roles = roles;
 module.exports.subscribers = subscribers;
 const data = {"2006011922": {

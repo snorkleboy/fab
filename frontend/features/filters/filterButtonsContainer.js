@@ -6,6 +6,7 @@ import {
     updateLocationFilter,
     
 } from 'baseRedux/actions/mapActions/mapActions'
+import schema from './filterSchema';
 import FilterButtons from './filterButtons.jsx'
 export const mapDispatchToProps = (dispatch, ownProps) => {
     return {
@@ -17,7 +18,8 @@ export const mapDispatchToProps = (dispatch, ownProps) => {
 export const mapStateToProps = (state, ownProps) => {
     return {
         selectObjs: state.locations.selectObjs,
-        locationArr:ownProps.locations || Object.values(state.locations.bounded)
+        locationArr:ownProps.locations || Object.values(state.locations.bounded),
+        schema
     }
 
 }

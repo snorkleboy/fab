@@ -19,7 +19,6 @@ export default class Tabber extends Component {
     makeItem({name,localActive,displayName,active}){
         return (<Menu.Item
             id={name+"tab"}
-            key={name+"tab"}
             content={displayName? displayName : name}
             name={name}
             active={localActive}

@@ -1,7 +1,6 @@
 const productionMode = (process.argv[3] === "production")
 var path = require('path');
 var webpack = require("webpack");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 var plugins = [
 
@@ -15,7 +14,6 @@ var devPlugins = [
 ];
 
 var prodPlugins = [
-    new MiniCssExtractPlugin(),
     new webpack.DefinePlugin({
     'process.env': {
       'NODE_ENV': JSON.stringify('production')
@@ -41,7 +39,7 @@ const rules = [
     {
         test: /\.(sa|sc|c)ss$/,
         use: [
-            productionMode?  MiniCssExtractPlugin.loader : "style-loader",
+            "style-loader",
             'css-loader',
             'sass-loader',
         ],

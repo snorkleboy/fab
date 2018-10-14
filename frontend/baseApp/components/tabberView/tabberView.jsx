@@ -38,7 +38,7 @@ export default class TabberView extends React.Component {
             <section className="mapContainer">
                 <Tabber header={this.filterTabberHeader()} css={"greyBackground mapMenu"}>
                    <DefView name="default view"/> 
-                    {this.props.featureChildren}
+                    {this.props.featureChildren.map(C=><C.Component {...C.props}/>)}
                 </Tabber>
             </section>
         )

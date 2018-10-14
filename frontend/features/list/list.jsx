@@ -12,7 +12,6 @@ export default class WeatherModule extends React.Component {
         }
         this.section = React.createRef();
         this.handleScroll=this.handleScroll.bind(this);
-        console.log("construct list",this.props)
 
     }
     componentDidMount(){
@@ -82,7 +81,6 @@ export default class WeatherModule extends React.Component {
         const index = this.state.index
         const itemsPerPage = this.state.itemsPerPage;
         const that = this;
-        console.log("render list",this.props)
         this.checkItemsPerPage();
         return(
             <section className="locationList greyBackground ">
