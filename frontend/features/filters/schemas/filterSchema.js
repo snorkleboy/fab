@@ -3,8 +3,6 @@ module.exports = {
     "Site Profile":[
         {component:"DropDownFilter",props:{keys:{'Name':"Location name"}}},
         {component:"DropDownFilter",props:{keys:{'OpenTime':"Site Open Time"}}},
-        {component:"DropDownFilter",props:{keys:{'TriggerValue':"Triggers"}}},
-
     ],
     "Geography":[
         {component:"DropDownFilter",props:{keys:{'Country':"Country"}}},

@@ -1,1 +1,1089 @@
-{"skelitor":{"princess":[],"food":[{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"list/listContainer.js"},"decorations":{}}]}],"admin":[{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"list/listContainer.js"},"decorations":{}}]},{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"list/listContainer.js"},"decorations":{}}]}]},"diana":{"princess":[{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"list/listContainer.js"},"decorations":{}}]},{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"filters/filterButtonsContainer.js"},"decorators":[{"name":"Weather","props":{"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}]}},{"name":"BVFilters","props":{"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}},{"name":"Default","props":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}]}}],"decorations":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}],"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}],"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}}]}],"food":[{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"list/listContainer.js"},"decorations":{}}]},{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"filters/filterButtonsContainer.js"},"decorators":[{"name":"Weather","props":{"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}]}},{"name":"BVFilters","props":{"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}},{"name":"Default","props":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}]}}],"decorations":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}],"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}],"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}}]}],"admin":[{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"filters/filterButtonsContainer.js"},"decorators":[{"name":"Weather","props":{"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}]}},{"name":"BVFilters","props":{"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}},{"name":"Default","props":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}]}}],"decorations":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}],"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}],"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}}]}]},"bubblegum":{"princess":[{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"list/listContainer.js"},"decorations":{}}]},{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"filters/filterButtonsContainer.js"},"decorators":[{"name":"Weather","props":{"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}]}},{"name":"BVFilters","props":{"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}},{"name":"Default","props":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}]}}],"decorations":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}],"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}],"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}}]}],"food":[{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"list/listContainer.js"},"decorations":{}}]},{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"filters/filterButtonsContainer.js"},"decorators":[{"name":"Weather","props":{"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}]}},{"name":"BVFilters","props":{"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}},{"name":"Default","props":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}]}}],"decorations":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}],"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}],"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}}]}],"admin":[{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"list/listContainer.js"},"decorations":{}}]},{"componentPackages":[{"componentMapping":{"featurePoint":"tabberView","path":"filters/filterButtonsContainer.js"},"decorators":[{"name":"Weather","props":{"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}]}},{"name":"BVFilters","props":{"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}},{"name":"Default","props":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}]}}],"decorations":{"Site Profile":[{"component":"DropDownFilter","props":{"keys":{"Name":"Location name"}}},{"component":"DropDownFilter","props":{"keys":{"OpenTime":"Site Open Time"}}},{"component":"DropDownFilter","props":{"keys":{"TriggerValue":"Triggers"}}}],"Geography":[{"component":"DropDownFilter","props":{"keys":{"Country":"Country"}}},{"component":"DropDownFilter","props":{"keys":{"State":"State"}}},{"component":"DropDownFilter","props":{"keys":{"City":"City"}}},{"component":"DropDownFilter","props":{"keys":{"Zip":"Zip Code"}}}],"Weather Condition":[{"component":"PrecipitationFilter","props":{"filterName":"precipitationFilter"}}],"Client":[{"component":"DropDownFilter","props":{"keys":{"Client":"Choose Clients"}}}],"Property Management":[{"component":"DropDownFilter","props":{"keys":{"ManagementCompanyName":"Choose Property Management Companies"}}}]}}]}]}}
+{
+    "skelitor": {
+        "princess": [],
+        "food": [{
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "list/listContainer.js"
+                },
+                "decorations": {}
+            }]
+        }],
+        "admin": [{
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "list/listContainer.js"
+                },
+                "decorations": {}
+            }]
+        }, {
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "list/listContainer.js"
+                },
+                "decorations": {}
+            }]
+        }]
+    },
+    "diana": {
+        "princess": [{
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "list/listContainer.js"
+                },
+                "decorations": {}
+            }]
+        }, {
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "filters/filterButtonsContainer.js"
+                },
+                "decorators": [{
+                    "name": "Weather",
+                    "props": {
+                        "Weather Condition": [{
+                            "component": "PrecipitationFilter",
+                            "props": {
+                                "filterName": "precipitationFilter"
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "BVFilters",
+                    "props": {
+                        "Client": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Client": "Choose Clients"
+                                }
+                            }
+                        }],
+                        "Property Management": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "ManagementCompanyName": "Choose Property Management Companies"
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "Default",
+                    "props": {
+                        "Site Profile": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Name": "Location name"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "OpenTime": "Site Open Time"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "TriggerValue": "Triggers"
+                                }
+                            }
+                        }],
+                        "Geography": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Country": "Country"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "State": "State"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "City": "City"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Zip": "Zip Code"
+                                }
+                            }
+                        }]
+                    }
+                }],
+                "decorations": {
+                    "Site Profile": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Name": "Location name"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "OpenTime": "Site Open Time"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "TriggerValue": "Triggers"
+                            }
+                        }
+                    }],
+                    "Geography": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Country": "Country"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "State": "State"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "City": "City"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Zip": "Zip Code"
+                            }
+                        }
+                    }],
+                    "Weather Condition": [{
+                        "component": "PrecipitationFilter",
+                        "props": {
+                            "filterName": "precipitationFilter"
+                        }
+                    }],
+                    "Client": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Client": "Choose Clients"
+                            }
+                        }
+                    }],
+                    "Property Management": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "ManagementCompanyName": "Choose Property Management Companies"
+                            }
+                        }
+                    }]
+                }
+            }]
+        }],
+        "food": [{
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "list/listContainer.js"
+                },
+                "decorations": {}
+            }]
+        }, {
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "filters/filterButtonsContainer.js"
+                },
+                "decorators": [{
+                    "name": "Weather",
+                    "props": {
+                        "Weather Condition": [{
+                            "component": "PrecipitationFilter",
+                            "props": {
+                                "filterName": "precipitationFilter"
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "BVFilters",
+                    "props": {
+                        "Client": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Client": "Choose Clients"
+                                }
+                            }
+                        }],
+                        "Property Management": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "ManagementCompanyName": "Choose Property Management Companies"
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "Default",
+                    "props": {
+                        "Site Profile": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Name": "Location name"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "OpenTime": "Site Open Time"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "TriggerValue": "Triggers"
+                                }
+                            }
+                        }],
+                        "Geography": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Country": "Country"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "State": "State"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "City": "City"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Zip": "Zip Code"
+                                }
+                            }
+                        }]
+                    }
+                }],
+                "decorations": {
+                    "Site Profile": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Name": "Location name"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "OpenTime": "Site Open Time"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "TriggerValue": "Triggers"
+                            }
+                        }
+                    }],
+                    "Geography": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Country": "Country"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "State": "State"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "City": "City"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Zip": "Zip Code"
+                            }
+                        }
+                    }],
+                    "Weather Condition": [{
+                        "component": "PrecipitationFilter",
+                        "props": {
+                            "filterName": "precipitationFilter"
+                        }
+                    }],
+                    "Client": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Client": "Choose Clients"
+                            }
+                        }
+                    }],
+                    "Property Management": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "ManagementCompanyName": "Choose Property Management Companies"
+                            }
+                        }
+                    }]
+                }
+            }]
+        }],
+        "admin": [{
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "filters/filterButtonsContainer.js"
+                },
+                "decorators": [{
+                    "name": "Weather",
+                    "props": {
+                        "Weather Condition": [{
+                            "component": "PrecipitationFilter",
+                            "props": {
+                                "filterName": "precipitationFilter"
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "BVFilters",
+                    "props": {
+                        "Client": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Client": "Choose Clients"
+                                }
+                            }
+                        }],
+                        "Property Management": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "ManagementCompanyName": "Choose Property Management Companies"
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "Default",
+                    "props": {
+                        "Site Profile": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Name": "Location name"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "OpenTime": "Site Open Time"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "TriggerValue": "Triggers"
+                                }
+                            }
+                        }],
+                        "Geography": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Country": "Country"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "State": "State"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "City": "City"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Zip": "Zip Code"
+                                }
+                            }
+                        }]
+                    }
+                }],
+                "decorations": {
+                    "Site Profile": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Name": "Location name"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "OpenTime": "Site Open Time"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "TriggerValue": "Triggers"
+                            }
+                        }
+                    }],
+                    "Geography": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Country": "Country"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "State": "State"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "City": "City"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Zip": "Zip Code"
+                            }
+                        }
+                    }],
+                    "Weather Condition": [{
+                        "component": "PrecipitationFilter",
+                        "props": {
+                            "filterName": "precipitationFilter"
+                        }
+                    }],
+                    "Client": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Client": "Choose Clients"
+                            }
+                        }
+                    }],
+                    "Property Management": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "ManagementCompanyName": "Choose Property Management Companies"
+                            }
+                        }
+                    }]
+                }
+            }]
+        }]
+    },
+    "bubblegum": {
+        "princess": [{
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "list/listContainer.js"
+                },
+                "decorations": {}
+            }]
+        }, {
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "filters/filterButtonsContainer.js"
+                },
+                "decorators": [{
+                    "name": "Weather",
+                    "props": {
+                        "Weather Condition": [{
+                            "component": "PrecipitationFilter",
+                            "props": {
+                                "filterName": "precipitationFilter"
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "BVFilters",
+                    "props": {
+                        "Client": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Client": "Choose Clients"
+                                }
+                            }
+                        }],
+                        "Property Management": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "ManagementCompanyName": "Choose Property Management Companies"
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "Default",
+                    "props": {
+                        "Site Profile": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Name": "Location name"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "OpenTime": "Site Open Time"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "TriggerValue": "Triggers"
+                                }
+                            }
+                        }],
+                        "Geography": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Country": "Country"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "State": "State"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "City": "City"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Zip": "Zip Code"
+                                }
+                            }
+                        }]
+                    }
+                }],
+                "decorations": {
+                    "Site Profile": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Name": "Location name"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "OpenTime": "Site Open Time"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "TriggerValue": "Triggers"
+                            }
+                        }
+                    }],
+                    "Geography": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Country": "Country"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "State": "State"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "City": "City"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Zip": "Zip Code"
+                            }
+                        }
+                    }],
+                    "Weather Condition": [{
+                        "component": "PrecipitationFilter",
+                        "props": {
+                            "filterName": "precipitationFilter"
+                        }
+                    }],
+                    "Client": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Client": "Choose Clients"
+                            }
+                        }
+                    }],
+                    "Property Management": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "ManagementCompanyName": "Choose Property Management Companies"
+                            }
+                        }
+                    }]
+                }
+            }]
+        }],
+        "food": [{
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "list/listContainer.js"
+                },
+                "decorations": {}
+            }]
+        }, {
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "filters/filterButtonsContainer.js"
+                },
+                "decorators": [{
+                    "name": "Weather",
+                    "props": {
+                        "Weather Condition": [{
+                            "component": "PrecipitationFilter",
+                            "props": {
+                                "filterName": "precipitationFilter"
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "BVFilters",
+                    "props": {
+                        "Client": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Client": "Choose Clients"
+                                }
+                            }
+                        }],
+                        "Property Management": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "ManagementCompanyName": "Choose Property Management Companies"
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "Default",
+                    "props": {
+                        "Site Profile": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Name": "Location name"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "OpenTime": "Site Open Time"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "TriggerValue": "Triggers"
+                                }
+                            }
+                        }],
+                        "Geography": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Country": "Country"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "State": "State"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "City": "City"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Zip": "Zip Code"
+                                }
+                            }
+                        }]
+                    }
+                }],
+                "decorations": {
+                    "Site Profile": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Name": "Location name"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "OpenTime": "Site Open Time"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "TriggerValue": "Triggers"
+                            }
+                        }
+                    }],
+                    "Geography": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Country": "Country"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "State": "State"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "City": "City"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Zip": "Zip Code"
+                            }
+                        }
+                    }],
+                    "Weather Condition": [{
+                        "component": "PrecipitationFilter",
+                        "props": {
+                            "filterName": "precipitationFilter"
+                        }
+                    }],
+                    "Client": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Client": "Choose Clients"
+                            }
+                        }
+                    }],
+                    "Property Management": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "ManagementCompanyName": "Choose Property Management Companies"
+                            }
+                        }
+                    }]
+                }
+            }]
+        }],
+        "admin": [{
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "list/listContainer.js"
+                },
+                "decorations": {}
+            }]
+        }, {
+            "componentPackages": [{
+                "componentMapping": {
+                    "featurePoint": "tabberView",
+                    "path": "filters/filterButtonsContainer.js"
+                },
+                "decorators": [{
+                    "name": "Weather",
+                    "props": {
+                        "Weather Condition": [{
+                            "component": "PrecipitationFilter",
+                            "props": {
+                                "filterName": "precipitationFilter"
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "BVFilters",
+                    "props": {
+                        "Client": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Client": "Choose Clients"
+                                }
+                            }
+                        }],
+                        "Property Management": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "ManagementCompanyName": "Choose Property Management Companies"
+                                }
+                            }
+                        }]
+                    }
+                }, {
+                    "name": "Default",
+                    "props": {
+                        "Site Profile": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Name": "Location name"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "OpenTime": "Site Open Time"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "TriggerValue": "Triggers"
+                                }
+                            }
+                        }],
+                        "Geography": [{
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Country": "Country"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "State": "State"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "City": "City"
+                                }
+                            }
+                        }, {
+                            "component": "DropDownFilter",
+                            "props": {
+                                "keys": {
+                                    "Zip": "Zip Code"
+                                }
+                            }
+                        }]
+                    }
+                }],
+                "decorations": {
+                    "Site Profile": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Name": "Location name"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "OpenTime": "Site Open Time"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "TriggerValue": "Triggers"
+                            }
+                        }
+                    }],
+                    "Geography": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Country": "Country"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "State": "State"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "City": "City"
+                            }
+                        }
+                    }, {
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Zip": "Zip Code"
+                            }
+                        }
+                    }],
+                    "Weather Condition": [{
+                        "component": "PrecipitationFilter",
+                        "props": {
+                            "filterName": "precipitationFilter"
+                        }
+                    }],
+                    "Client": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "Client": "Choose Clients"
+                            }
+                        }
+                    }],
+                    "Property Management": [{
+                        "component": "DropDownFilter",
+                        "props": {
+                            "keys": {
+                                "ManagementCompanyName": "Choose Property Management Companies"
+                            }
+                        }
+                    }]
+                }
+            }]
+        }]
+    }
+}

@@ -6,7 +6,7 @@ export default class Tabber extends Component {
         super(props);
         console.log({props:this.props})
         const activeItem = Array.isArray(this.props.children)? this.props.children[0].props.name : this.props.children.name
-        this.state = { open:this.props.noClose, }
+        this.state = { open:true, }
         this.handleItemClick = this.handleItemClick.bind(this);
     }
 

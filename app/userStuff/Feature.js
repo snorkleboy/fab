@@ -5,13 +5,13 @@ const _ = require("lodash");
 //-dynamically constructs factory methods to decorate itself from its componentPackages
 //-can resolve itself to a map of {featurePoint:[componentMappings]}
 function Feature (componentPackages){
-    this.componentPackages = componentPackages.slice();
+    this.componentPackages = _.cloneDeep(componentPackages);
     this.componentPackages.forEach((package,i)=>{
         if (package.decorators){
             package.decorators.forEach(decorator=>{
                 this["with"+decorator.name] = function(){
                     const clone = new Feature(this.componentPackages);
-                    clone.componentPackages[i].decorations = _.merge(package.decorations,decorator.props,mergeConcater);
+                    clone.componentPackages[i].decorations = _.merge(clone.componentPackages[i].decorations,decorator.props,mergeConcater);
                     return clone;
                 };
             })
