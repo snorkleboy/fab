@@ -1,6 +1,6 @@
 
 export function fetchLocations(){
-    return fetch(`./admin/locations`)
+    return fetch(`./data`)
         .then(res=>res.json())
         .then(res=> {return res})
 }

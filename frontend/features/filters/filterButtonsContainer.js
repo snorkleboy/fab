@@ -5,7 +5,7 @@ import {
     setLocationFilter,
     updateLocationFilter,
     
-} from '../../store/actions/mapActions/mapActions'
+} from 'baseRedux/actions/mapActions/mapActions'
 import FilterButtons from './filterButtons.jsx'
 export const mapDispatchToProps = (dispatch, ownProps) => {
     return {

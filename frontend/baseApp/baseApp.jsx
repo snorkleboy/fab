@@ -1,4 +1,4 @@
-import TabberView from "./components/tabberView/mapController";
+import TabberView from "./components/tabberView/tabberViewContainer";
 import Header from "./components/header/HeaderContainer";
 import Modal from "UILibrary/uiHOCs/modal/modalContainer";
 import React from "react";

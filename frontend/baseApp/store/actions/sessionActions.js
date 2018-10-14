@@ -16,10 +16,10 @@ export const postUser = (user)=>(dispatch)=>apiCalls.postUser(user)
         if (!res || res.error){
             throw ("POSTUSER ERROR",{user,res});
         }else{
-            console.log("dispathcing user",user);
-            dispatch(receiveUser(user))
+            console.log("receive/dispatch user",res);
+            dispatch(receiveUser(res))
         }
-});
+    })
 export const deleteUser = ()=>(dispatch)=>apiCalls.deleteUser()
     .then(res=>{
         if (res.error){

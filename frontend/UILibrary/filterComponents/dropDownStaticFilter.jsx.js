@@ -1,10 +1,10 @@
 import React from "react";
 
 import * as lodash from 'Lodash';
-import * as filters from '../../../util/filters';
-import * as filterSeries from '../../../util/staticFilters';
+import * as filters from 'util/filters';
+import * as filterSeries from 'util/staticFilters';
 import { Dropdown, Search,Item } from 'semantic-ui-react'
-import getActives from "../util/getActivesFromFilters";
+import getActives from "util/getActivesFromFilters";
 
 export default class DropDownStaticFilter extends React.Component{
     constructor(props){

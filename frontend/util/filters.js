@@ -1,5 +1,6 @@
 
 import filterFactory from './filterFactory';
+import Filter from "util/Filter";
 export const viewport =(map)=>{
     const bounds = map.getBounds();
     return filterFactory.make(
@@ -11,11 +12,7 @@ export const viewport =(map)=>{
 const ne = typeof google !== "undefined"? new google.maps.LatLng(24.9493,-125.0011):{lat:24.9493,lng:-125.0011}
 const sw = typeof google !== "undefined"? new google.maps.LatLng(49.5904,-66.9326):{lat:49.5904,lng:-66.9326}
 const bounds = typeof google !== "undefined"? new google.maps.LatLngBounds(sw,ne):{north:24.9493,south:49.5904,west:-66.9326,east:-125.0011}
-export const defaultViewPort = ()=>filterFactory.make(
-    "boundsFilter",
-    "viewportFilter",
-    {bounds}
-);
+export const defaultViewPort = ()=>new Filter("test",()=>true,"otherName")
 defaultViewPort.type = "viewportFilter";
 export const shapeFilter = (shape)=> {
     let data;

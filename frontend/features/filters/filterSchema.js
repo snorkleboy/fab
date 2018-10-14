@@ -4,7 +4,7 @@ import  {
     DatePicker,
     PrecipitationFilter,
     CheckboxFilter
-} from "./filterComponents/filterComponents";
+} from "UILibrary/filterComponents/filterComponents";
 
 
 export default {

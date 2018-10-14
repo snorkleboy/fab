@@ -1,6 +1,6 @@
 import React from "react";
 
-import CollapsibleLabel from '../uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel'
+import CollapsibleLabel from 'UILibrary/uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel'
 import style from './filters.scss'
 import dateStyle from './datepicker.scss'
 

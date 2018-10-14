@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import Poster from './poster'
-import * as APIcalls from '../../../util/apiCalls'
-import {setMessage} from "../../store/actions/uiActions/uiActions";
+import * as APIcalls from 'util/apiCalls'
+import {setMessage} from "baseRedux/actions/uiActions/uiActions";
 export const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         post:(workOrders)=>APIcalls.postWorkOrders(workOrders),

@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import List from './list';
-import * as UIaction from '../../store/actions/uiActions/uiActions'
-import {reset} from "../../store/actions/mapActions/mapActions";
+import * as UIaction from 'baseRedux/actions/uiActions/uiActions'
+import {reset} from "baseRedux/actions/mapActions/mapActions";
 
 export const mapDispatchToProps = (dispatch, ownProps) => {
     return {
@@ -16,6 +16,8 @@ export const mapStateToProps = (state, ownProps) => {
     return {
         clickSelected: state.ui ? state.ui.clickSelected : null,
         locations: ownProps.locations || state.locations.selected,
+        displayName:`LISTVIEW-${state.locations.selected.length}`,
+        name:"listView"
     }
 }
 

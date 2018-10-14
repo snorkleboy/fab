@@ -2,8 +2,8 @@ import React from "react";
 import { Dropdown } from 'semantic-ui-react'
 import Datetime from 'react-datetime';
 import Style from './poster.scss'
-import UIMessage from "../messageDisplayer/Message";
-import {validator,validatations} from '../../../util/validator'
+import UIMessage from "UILibrary/messageDisplayer/Message";
+import {validator,validatations} from 'util/validator'
 
 
 //not done as a react component mostly for timesake 

@@ -2,9 +2,9 @@ import React from "react";
 import { Dropdown, Search,Item } from 'semantic-ui-react'
 import * as lodash from 'Lodash';
 import Fuse from 'fuse.js'
-import filterFactory from "../../../util/filterFactory";
-import {dateFilter} from "../../../util/filters";
-import getActives from "../util/getActivesFromFilters";
+import filterFactory from "util/filterFactory";
+import {dateFilter} from "util/filters";
+import getActives from "util/getActivesFromFilters";
 var fuseOptions = {
     shouldSort: true,
     threshold: 0.6,

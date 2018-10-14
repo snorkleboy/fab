@@ -1,9 +1,11 @@
 
 import * as sessionActions from '../actions/sessionActions'
 import {actionTypes} from '../actions/sessionActions'
+import AsyncLoader from "frontend/asyncLoader"
 const _session = ()=>({
     loggedIn:false,
-    userName:null
+    userName:null,
+    featureSchema:null
 });
 
 function sessionReducer (state = _session(), action){
@@ -13,6 +15,8 @@ function sessionReducer (state = _session(), action){
         case actionTypes['receiveUser']:
             newState.userName = action.payload.subscriber;
             newState.loggedIn = action.payload.role
+            newState.featureSchema = action.payload.featureSchema
+            AsyncLoader.LoadFeatures(action.payload.featureSchema);
             return newState;
         case actionTypes.logout:
             newState.userName = null;
