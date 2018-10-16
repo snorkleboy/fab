@@ -11,7 +11,6 @@ const featureGetter = ({featuresToLoad,loadFeatures})=> {
                 asyncImport(featureDescriptor.featureDirectoryName)
                     .then(featurePackage=> {
                         featurePackage._decoratorsToUse = featureDescriptor.decorators;
-                        featurePackage._name =  featureDescriptor.name;
                         return featurePackage
                     })
                     .then(featurePackage=>{console.log({featuresToLoad,featureDescriptor,featurePackage}); return featurePackage})
@@ -33,23 +32,25 @@ function mapFeaturesToFeaturePoints(loadedFeatures){
         const decoratorNames = feature._decoratorsToUse;
         feature.forEach((componentPackageWrapper,k)=>{
             const componentPackage = componentPackageWrapper.componentPackage;
-            const destination = componentPackage.destinationFeaturePoint;
-            componentPackage.props = {}
-            
-            if (componentPackage.decorators){
-                componentPackage.decorators.forEach(decorator=>{
-                    if (decoratorNames.includes(decorator.name)){
-                        componentPackage.props = _.merge({},componentPackage.props,decorator.props)
-                    }
-                })
-            }
-            componentPackage.props.name = componentPackage.name;
-            console.log({componentPackage,decoratorNames,feature});
+            if (!componentPackage.asDecorator || decoratorNames.includes(componentPackage.asDecorator)){
+                const destination = componentPackage.destinationFeaturePoint;
+                componentPackage.props = {}
 
-            if(featurePointToComponentMap[destination]){
-                featurePointToComponentMap[destination].push(componentPackage)
-            }else{
-                featurePointToComponentMap[destination] =[componentPackage];
+                if (componentPackage.decorators){
+                    componentPackage.decorators.forEach(decorator=>{
+                        if (decoratorNames.includes(decorator.name)){
+                            componentPackage.props = _.merge({},componentPackage.props,decorator.props)
+                        }
+                    })
+                }
+                componentPackage.props.name = componentPackage.name;
+                console.log({componentPackage,decoratorNames,feature});
+
+                if(featurePointToComponentMap[destination]){
+                    featurePointToComponentMap[destination].push(componentPackage)
+                }else{
+                    featurePointToComponentMap[destination] =[componentPackage];
+                }
             }
         })
         

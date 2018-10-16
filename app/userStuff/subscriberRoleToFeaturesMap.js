@@ -45,7 +45,8 @@ subscriberRoleToFeaturesMap[subscribers[1]][roles[1]] = [
     FeatureDescriptor(featureNames.filters,
         [
             decorators.filters.Default,
-            decorators.filters.Weather
+            decorators.filters.Weather,
+            decorators.filters.randomDec
         ]
     ),
 ]

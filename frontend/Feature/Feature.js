@@ -1,14 +1,26 @@
 import featurePoints from "./featurePoints"
 import featuresRegistrations from "./features.json"
 
-const asFeaturePartial = (destinationFeaturePoint,name ,decorators = []) => (component)=>(
-    {
-        componentPackage:{
-            destinationFeaturePoint,decorators,name,component
+const asFeaturePartial = (destinationFeaturePoint,name ,decorators = []) => {
+   const makePackage = (component) => (
+        {
+            componentPackage: {
+                destinationFeaturePoint, decorators, name, component
+            }
         }
-    }
-)
-    
+   )
+    makePackage.asDecoration = (decorationName)=>(component)=>({
+        componentPackage: {
+            destinationFeaturePoint, decorators, name, component,asDecorator:decorationName
+        }
+    })
+    return makePackage;
+}
+
+const asDecorator = (decoratorName) => (featurePartial)=>{
+    featurePartial.asDecorationTrigger = decoratorName;
+    return featurePartial;
+}
 export {asFeaturePartial,featurePoints,featuresRegistrations};
 
 // //Feature
