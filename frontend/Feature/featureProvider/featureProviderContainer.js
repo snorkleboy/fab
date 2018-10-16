@@ -7,8 +7,10 @@ export const mapDispatchToProps = (dispatch, ownProps) => {
 }
 
 export const mapStateToProps = (state, ownProps) => {
+    const thisFeaturePoint = ownProps.featurePointName;
+    console.log({state});
     return {
-        loadedFeatures:state.features.loadedFeatures
+        FeaturePointChildren : state.features.featurePointToComponentMap[thisFeaturePoint]
     }
 }
 

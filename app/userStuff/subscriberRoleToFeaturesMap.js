@@ -13,7 +13,7 @@ console.log("HERE",{featuresAndDecorators})
 
 
 //this is what gets sent to the front end as a description of what to load. 
-const FeatureDescriptor = (featureDirectoryName,Decorators)=>({featureDirectoryName,Decorators})
+const FeatureDescriptor = (featureDirectoryName,decorators)=>({featureDirectoryName,decorators})
 
 
 ///

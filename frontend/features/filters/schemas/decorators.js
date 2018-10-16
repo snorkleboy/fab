@@ -3,7 +3,7 @@ import weatherSchema from "./weatherSchema";
 import defaultSchema from"./filterSchema";
 import {featuresRegistrations} from "Feature";
 
-const featureName = featuresRegistrations.filterNames.filters;
+const featureName = featuresRegistrations.featureNames.filters;
 const decoratorNames = featuresRegistrations[featureName];
 export default [
     {name:decoratorNames.Weather,props:{schema:weatherSchema}},

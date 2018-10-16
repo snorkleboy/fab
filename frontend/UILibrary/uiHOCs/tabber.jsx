@@ -4,7 +4,6 @@ import { Input, Menu, Segment,Button, Rail } from 'semantic-ui-react'
 export default class Tabber extends Component {
     constructor(props){
         super(props);
-        console.log({props:this.props})
         const activeItem = Array.isArray(this.props.children)? this.props.children[0].props.name : this.props.children.name
         this.state = { open:true, }
         this.handleItemClick = this.handleItemClick.bind(this);
@@ -37,13 +36,17 @@ export default class Tabber extends Component {
     render() {
         const { activeItem } = this.state
         const header = this.props.header;
-        const children = [];
+        let children = [];
         if (Array.isArray(this.props.children)){
-            this.props.children.forEach(potentialChild=>Array.isArray(potentialChild)? children.push(...potentialChild) : children.push(potentialChild))
+            children = this.props.children.filter(c=>c);
         }else{
-            children.push(this.props.children);
+            if (this.props.children){
+                children.push(this.props.children);
+            }else{
+                children = [];
+            }
         }
-        console.log({children});
+        console.log("TABBER",{children})
         return (
             <div className={`${!this.props.noClose? "posAbs":null} ${this.state.open? "left0px" : "left-350px"} ${this.props.css}`}>
                 {header}

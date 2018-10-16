@@ -4,11 +4,10 @@ import featuresRegistrations from "./features.json"
 const asFeaturePartial = (destinationFeaturePoint,decorators = [],name = null) => (component)=>(
     {
         componentPackage:{
-            destinationFeaturePoint,props,name,component:component
+            destinationFeaturePoint,decorators,name,component
         }
     }
 )
-
     
 export {asFeaturePartial,featurePoints,featuresRegistrations};
 

@@ -5,7 +5,7 @@ import Loadable from 'react-loadable';
 function AsyncLoader (paths){
     const components = paths.map(path=>{
         const comp = Loadable({
-            loader: () => import(/* webpackChunkName: 'asyncComponents/[request]' */ `./baseApp/${path}`).catch(e=>console.log(e)),
+            loader: () => import(/* webpackChunkName: 'mainAppAsync/[request]' */ `./baseApp/${path}`).catch(e=>console.log(e)),
             loading:() => <h1> "loading" </h1>
         })
         loadedComponents[path] = comp;
@@ -16,41 +16,5 @@ function AsyncLoader (paths){
 
     return components.map(C=><C/>)
 }
-//
-// AsyncLoader.LoadFeatures = function(featureSchema){
-//     Object.keys(featureSchema).forEach(featureName=>{
-//         featureMap[featureName] = featureSchema[featureName].map(featureObj=>{
-//             const props = featureObj.props || {};
-//            
-//             let tempTabberName = featureObj.path.split("/");
-//             tempTabberName = tempTabberName[tempTabberName.length-1];
-//             tempTabberName = tempTabberName.split(".js")[0];
-//             tempTabberName = tempTabberName.toUpperCase().split("CONTAINER")[0];
-//
-//             props.name = tempTabberName;
-//                
-//             console.log("feature component FETCHING",{featureSchema,featureName,featureObj})
-//             const Component = Loadable({
-//                 loader: () => import(
-//                     /* 
-//                     webpackChunkName: 'asyncComponents/[request]',
-//                     webpackMode: "eager",
-//                     webpackPrefetch: true 
-//                     */
-//                     `./features/${featureObj.path}`
-//                     )
-//                     .then(Component=>{console.log("feature component loaded",{Component,featureSchema,featureName,featureObj});return Component;})
-//                     .catch(e=>console.log(e)),
-//                 loading:() => <h1> "loading" </h1>
-//             })
-//             return {Component,props};
-//         })
-//     })
-// }
-//
-// let key = 0;
-// AsyncLoader.getFeature = (name)=>{
-//     return featureMap[name]? featureMap[name]: [];//.map(C=><C key={key++ + Date.now()} name={"loader "+key}/>) 
-// }
 
 export default AsyncLoader;

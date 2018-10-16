@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import style from './list.scss'
 
 import ListLink from './listItemLink'
-export default class WeatherModule extends React.Component {
+export default class ListView extends React.Component {
     constructor(props){
         super(props)
         this.state = {

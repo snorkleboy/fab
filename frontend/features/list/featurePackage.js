@@ -1,12 +1,8 @@
-// import listContainer from "features/list/listContainer";
-//
-// const components = {
-//     listContainer:new ComponentMapping(listContainer, featurePoints.tabberView)
-// }
-//
-// export const listFeature = new Feature([
-//     new ComponentPackage(componentMappings.listContainer)
-// ],
-//     "listView")
-//
-// export default listFeature;
+import ListFeaturePartial from "features/list/listContainer";
+
+const listFeature = [
+    ListFeaturePartial
+]
+console.log({ListFeaturePartial},JSON.stringify(listFeature));
+export default listFeature;
+

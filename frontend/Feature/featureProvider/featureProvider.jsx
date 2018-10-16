@@ -4,18 +4,16 @@ import asyncImport from "frontend/asyncImport"
 export default class featureProvider extends React.Component {
     constructor(props){
         super(props);
-        console.log("FEATURE PROVIDER",{props})
-
     }
     render(){
-        const children = [];
-        if (!Array.isArray(this.children)){
-            children.push(this.children);
+        if (Array.isArray(this.children)) {
+            console.warn("Feature provider does not support multiple children");
         }
         const featurePointName = this.props.featurePointName;
-        const featureChildren = this.props.loadedFeatures;
-        console.log("FEATURE PROVIDER",{featurePointName,featureChildren})
-        return children        
+        const FeaturePointChildren = this.props.FeaturePointChildren;
+        console.log("FEATURE PROVIDER RENDER",{props:this.props},{children:this.props.children,featurePointName,FeaturePointChildren})
+        return React.cloneElement(this.props.children,{FeaturePointChildren});
     }
     
 }
+

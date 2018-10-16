@@ -1,9 +1,8 @@
 
 export const actionTypes = {
-    'receiveFeaturePackages':"RECEIVE_FEATURE_PACKAGES",
-    
+    'receiveFeaturePointToComponentMap':"RECIEVE_FEATUREPOINT_TO_COMPONENT_MAP",
 }
-export const receiveFeaturePackages = (featurePackages)=>({
+export const receiveFeaturePointToComponentMap = (featurePackages)=>({
     payload:featurePackages,
-    type:actionTypes['receiveFeatures']
+    type:actionTypes['receiveFeaturePointToComponentMap']
 })

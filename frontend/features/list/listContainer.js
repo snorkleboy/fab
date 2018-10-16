@@ -16,9 +16,9 @@ export const mapStateToProps = (state, ownProps) => {
     return {
         clickSelected: state.ui ? state.ui.clickSelected : null,
         locations: ownProps.locations || state.locations.selected,
-        displayName:`LISTVIEW-[${state.locations.selected.length}]`,
+        name:`LISTVIEW-[${state.locations.selected.length}]`,
     }
 }
 
 export default asFeaturePartial(featurePoints.tabberView)
-connect(mapStateToProps, mapDispatchToProps)(List);
+(connect(mapStateToProps, mapDispatchToProps)(List));

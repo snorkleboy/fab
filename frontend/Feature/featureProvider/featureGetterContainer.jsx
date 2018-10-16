@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import featureGetter from "./featureGetter"
-import {receiveFeature} from "baseRedux/actions/featureActions/featureActions"
+import {receiveFeaturePointToComponentMap} from "baseRedux/actions/featureActions/featureActions"
 export const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        loadFeatures:(features)=>dispatch(receiveFeature(features))
+        loadFeatures:(features)=>dispatch(receiveFeaturePointToComponentMap(features))
     }
 }
 

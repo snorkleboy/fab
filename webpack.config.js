@@ -1,7 +1,10 @@
 const productionMode = (process.argv[3] === "production")
+const fs = require('fs');
+
 var path = require('path');
 var webpack = require("webpack");
-
+const featureDirectory = "./frontend/features"
+const featureDirectoryNames = fs.readdirSync(featureDirectory)
 var plugins = [
 
 ];
@@ -25,7 +28,10 @@ plugins = plugins.concat(
     productionMode? prodPlugins : devPlugins
 );
 
-
+// {
+//     test:/\/frontend\/features/,
+//         use:"./frontend/util/webpackUtils/featureNameGetterLoader"
+// }
 const rules = [
     {
         test: /\.jsx?$/,
@@ -44,6 +50,7 @@ const rules = [
             'sass-loader',
         ],
     }
+    
 ]
 
 const moduleObj = {rules}
@@ -63,6 +70,8 @@ const resolve = {
         frontend: path.resolve(__dirname, './frontend/'),
     }
 };
+
+            
 const entryOptions = {
     mode: productionMode ? "production" : "development",
     entry: {
@@ -77,6 +86,7 @@ const entryOptions = {
     plugins,
     resolve,
     devtool,
+    bail: true,
     module:moduleObj
 }
 
