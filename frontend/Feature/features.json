@@ -1,0 +1,16 @@
+{
+  "featureNames":{
+    "filters":"filters",
+    "list":"list"
+  },
+  
+  "filters":{
+    "Weather":"Weather",
+    "BVFilters":"BVFilters",
+    "Default":"Default"
+  },
+  
+  "list":{
+    
+  }
+}

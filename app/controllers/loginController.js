@@ -1,7 +1,8 @@
 const express = require('express');
 const loginController = express.Router();
-const featureResolver = require("../userStuff/subscriberRoleToFeaturesResolver")
+const featureResolver = require("../userStuff/subscriberRoleToFeaturesMap")
 
+console.log(JSON.stringify(featureResolver));
 
 loginController.post('/:subscriber/:role', (req, res,next) => {
     const obj = {};
@@ -10,9 +11,8 @@ loginController.post('/:subscriber/:role', (req, res,next) => {
     
     obj["subscriber"] = role + subscriber
     obj["role"] = role + subscriber
-    obj["featureSchema"] = featureResolver(subscriber,role);
-    console.log(featureResolver(subscriber,role))
-    
+    obj["features"] = featureResolver[subscriber][role];
+    console.log({role , subscriber},featureResolver[subscriber][role]);
     res.send(obj);
 })
 

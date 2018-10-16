@@ -3,7 +3,11 @@ import React from "react";
 import CollapsibleLabel from 'UILibrary/uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel'
 import style from './filters.scss'
 import dateStyle from './datepicker.scss'
-import AsyncLoader from "frontend/asyncLoader";
+import {DropDownFilter, PrecipitationFilter} from "UILibrary/filterComponents/filterComponents"
+const componentMap =  {
+    PrecipitationFilter:PrecipitationFilter,
+    DropDownFilter:DropDownFilter
+};
 
 const maxItemsInDropdown = 15;
 export default class FilterButtons extends React.Component{
@@ -11,7 +15,19 @@ export default class FilterButtons extends React.Component{
         super(props)
     }
     render(){
-        
+        const filters = entries.map(entry=>{
+            const Component = componentMap[entry.component]
+            return (
+                <Component
+                    selectObjs={this.props.selectObjs}
+                    locations={this.props.locationArr}
+                    setFilter={this.props.setFilter}
+                    unsetFilter={this.props.unsetFilter}
+                    maxItemsInDropdown={maxItemsInDropdown}
+                    {...entry.props}
+                />
+            )
+        });
         const componentMap = this.props.schema;
         console.log({componentMap},this.props)
         return(
@@ -21,19 +37,7 @@ export default class FilterButtons extends React.Component{
                     return (
                         <span id={displayName.replace(/ /g,"")}>
                             <CollapsibleLabel label={displayName}>
-                                {entries.map(entry=>{
-                                    const Component = AsyncLoader.getFeature("ui")[entry.component]
-                                    return (
-                                        <Component
-                                            selectObjs={this.props.selectObjs}
-                                            locations={this.props.locationArr}
-                                            setFilter={this.props.setFilter}
-                                            unsetFilter={this.props.unsetFilter}
-                                            maxItemsInDropdown={maxItemsInDropdown}
-                                            {...entry.props}
-                                        />
-                                    )
-                                })}
+                                {filters.length>0? filters : <h1>hi</h1>}
                             </CollapsibleLabel>
                         </span>
                     )

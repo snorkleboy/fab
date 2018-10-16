@@ -15,8 +15,6 @@ function sessionReducer (state = _session(), action){
         case actionTypes['receiveUser']:
             newState.userName = action.payload.subscriber;
             newState.loggedIn = action.payload.role
-            newState.featureSchema = action.payload.featureSchema
-            AsyncLoader.LoadFeatures(action.payload.featureSchema);
             return newState;
         case actionTypes.logout:
             newState.userName = null;

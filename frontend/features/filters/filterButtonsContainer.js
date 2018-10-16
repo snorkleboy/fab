@@ -1,4 +1,6 @@
 import { connect } from 'react-redux';
+import {asFeaturePartial,featurePoints} from "Feature"
+import decorators from './schemas/decorators';
 import React from 'react';
 import {
     unsetLocationFilter,
@@ -23,5 +25,4 @@ export const mapStateToProps = (state, ownProps) => {
     }
 
 }
-
-export default connect(mapStateToProps, mapDispatchToProps)(FilterButtons);
+export default asFeaturePartial(featurePoints.tabberView, decorators, "Filters")(connect(mapStateToProps, mapDispatchToProps)(FilterButtons))

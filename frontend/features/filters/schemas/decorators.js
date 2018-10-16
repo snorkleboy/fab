@@ -1,11 +1,13 @@
-const bvSchema = require("./bvschema");
-const weatherSchema = require("./weatherSchema");
-const defaultSchema = require("./filterSchema");
+import bvSchema from"./bvschema";
+import weatherSchema from "./weatherSchema";
+import defaultSchema from"./filterSchema";
+import {featuresRegistrations} from "Feature";
 
-module.exports = [
-    {name:"Weather",props:{schema:weatherSchema}},
-    {name:"BVFilters",props:{schema:bvSchema}},
-    {name:"Default",props:{schema:defaultSchema}}
-    
+const featureName = featuresRegistrations.filterNames.filters;
+const decoratorNames = featuresRegistrations[featureName];
+export default [
+    {name:decoratorNames.Weather,props:{schema:weatherSchema}},
+    {name:decoratorNames.BVFilters,props:{schema:bvSchema}},
+    {name:decoratorNames.Default,props:{schema:defaultSchema}}
 ]
     

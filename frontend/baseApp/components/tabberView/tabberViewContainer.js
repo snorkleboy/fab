@@ -27,7 +27,6 @@ export const mapStateToProps = (state, ownProps) => {
         clickSelected: state.ui.clickSelected,
         SubscriberId:state.session.SubscriberId,
         activeFilters:state.locations.selectObjs,
-        featureChildren:AsyncLoader.getFeature("tabberView")
     }
 }
 
