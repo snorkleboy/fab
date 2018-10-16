@@ -22,10 +22,12 @@ export default class CollapsibleFilterLabel extends Component {
         const label = this.props.label;
         let children = [];
         if (this.props.children){
-            if (Array.isArray(this.props.children.map)){
+            if (Array.isArray(this.props.children)){
                 children = this.props.children
             }else{
-                children.push(this.props.children);
+                if (this.props.children){
+                    children.push(this.props.children);
+                }
             }
         }
         return (

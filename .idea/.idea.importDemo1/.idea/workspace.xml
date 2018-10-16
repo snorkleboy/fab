@@ -3,39 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="eddb22ff-93aa-4c27-8388-76c233ad50d6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.importDemo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.importDemo1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/Feature/Feature.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Feature/Feature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetterContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetterContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureProvider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureProviderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureProviderContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/UILibrary/uiHOCs/tabber.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/UILibrary/uiHOCs/tabber.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/asyncImport.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/asyncImport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/asyncLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/asyncLoader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/baseApp/components/tabberView/tabberView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/baseApp/components/tabberView/tabberView.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/baseApp/store/actions/featureActions/featureActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/baseApp/store/actions/featureActions/featureActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/baseApp/store/actions/sessionActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/baseApp/store/actions/sessionActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/baseApp/store/reducers/featureReducer/featureReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/baseApp/store/reducers/featureReducer/featureReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/features/filters/featurePackage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/filters/featurePackage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/UILibrary/filterComponents/dropDownFilterer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/UILibrary/filterComponents/dropDownFilterer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/UILibrary/filterComponents/dropDownStaticFilter.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/UILibrary/filterComponents/dropDownStaticFilter.jsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/UILibrary/filterComponents/precipitationFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/UILibrary/filterComponents/precipitationFilter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/UILibrary/uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/UILibrary/uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/baseApp/store/reducers/locationReducers/locationReceiverReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/baseApp/store/reducers/locationReducers/locationReceiverReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/features/filters/filterButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/filters/filterButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/features/filters/schemas/decorators.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/filters/schemas/decorators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/features/list/featurePackage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/list/featurePackage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/features/list/list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/list/list.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/features/filters/filterButtonsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/filters/filterButtonsContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/features/filters/schemas/bvschema.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/filters/schemas/bvschema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/features/filters/schemas/filterSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/filters/schemas/filterSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/features/filters/schemas/weatherSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/filters/schemas/weatherSchema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/features/list/listContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/list/listContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/WeatherModuleEntry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/components-header-HeaderContainer.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/components-header-header-scss.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/components-header-header.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/components-tabberView-leftMenu.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/components-tabberView-map.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/components-tabberView-tabberView.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/components-tabberView-tabberViewContainer.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/style-colorScheme.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/style-general.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/style-reset.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/asyncComponents/weatherModule.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/mainApp.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/vendors~mainApp.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webpackOutput/WeatherModuleEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/webpackOutput/WeatherModuleEntry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webpackOutput/mainApp.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/webpackOutput/mainApp.chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/webpackOutput/vendors~mainApp.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/webpackOutput/vendors~mainApp.chunk.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/public/webpackOutput/" />
@@ -48,14 +32,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="featureGetter.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx">
+      <file leaf-file-name="listContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/features/list/listContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+            <state relative-caret-position="270">
+              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabberView.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/baseApp/components/tabberView/tabberView.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filterButtons.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/features/filters/filterButtons.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="69" lean-forward="true" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollapsibleFilterLabel.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/UILibrary/uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -69,56 +80,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="featureProvider.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/Feature/featureProvider/featureProvider.jsx">
+      <file leaf-file-name="filterButtonsContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/features/filters/filterButtonsContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="75" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="75" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="featureProviderContainer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/Feature/featureProvider/featureProviderContainer.js">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="featureReducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/baseApp/store/reducers/featureReducer/featureReducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#81#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="featureActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/baseApp/store/actions/featureActions/featureActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subscriberRoleToFeaturesMap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -156,13 +131,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/authCheck/authCheck.jsx" />
-        <option value="$PROJECT_DIR$/app/userStuff/featurePointToComponentResolver.js" />
-        <option value="$PROJECT_DIR$/frontend/features/filters/schemas/schemas.js" />
         <option value="$PROJECT_DIR$/app/userStuff/featureToComponentResolver.js" />
         <option value="$PROJECT_DIR$/app/userStuff/features.js" />
         <option value="$PROJECT_DIR$/frontend/util/apiCalls.js" />
-        <option value="$PROJECT_DIR$/frontend/features/filters/schemas/filterSchema.js" />
         <option value="$PROJECT_DIR$/app/userStuff/data.js" />
         <option value="$PROJECT_DIR$/app/userStuff/Feature.js" />
         <option value="$PROJECT_DIR$/frontend/features/list/featurePackage.json" />
@@ -175,12 +146,10 @@
         <option value="$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesResolver.js" />
         <option value="$PROJECT_DIR$/frontend/features/Feature/Feature.js" />
         <option value="$PROJECT_DIR$/frontend/util/Feature/Feature.js" />
-        <option value="$PROJECT_DIR$/frontend/features/filters/filterButtonsContainer.js" />
         <option value="$PROJECT_DIR$/frontend/features/features.json" />
         <option value="$PROJECT_DIR$/frontend/baseApp/store/reducers/sessionReducer.js" />
         <option value="$PROJECT_DIR$/frontend/baseApp/store/reducers/componentReducer/componentReducer.js" />
         <option value="$PROJECT_DIR$/frontend/baseApp/store/reducers/featureReducer/componentReducer.js" />
-        <option value="$PROJECT_DIR$/frontend/features/filters/filterButtons.jsx" />
         <option value="$PROJECT_DIR$/frontend/baseApp/components/tabberView/tabberViewContainer.js" />
         <option value="$PROJECT_DIR$/app/controllers/loginController.js" />
         <option value="$PROJECT_DIR$/frontend/Feature/featureProvider/featureLoader.js" />
@@ -188,17 +157,14 @@
         <option value="$PROJECT_DIR$/frontend/baseApp/store/rootReducer.js" />
         <option value="$PROJECT_DIR$/frontend/Feature/features.json" />
         <option value="$PROJECT_DIR$/frontend/features/filters/schemas/decorators.js" />
-        <option value="$PROJECT_DIR$/frontend/Feature/Feature.js" />
         <option value="$PROJECT_DIR$/frontend/util/featureNameGetterLoader.js" />
         <option value="$PROJECT_DIR$/frontend/asyncImport.js" />
         <option value="$PROJECT_DIR$/frontend/features/filters/featurePackage.js" />
         <option value="$PROJECT_DIR$/frontend/features/list/featurePackage.js" />
         <option value="$PROJECT_DIR$/frontend/asyncLoader.jsx" />
         <option value="$PROJECT_DIR$/frontend/util/webpackUtils/featureNameGetterLoader.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js" />
         <option value="$PROJECT_DIR$/frontend/UILibrary/uiHOCs/tabber.jsx" />
-        <option value="$PROJECT_DIR$/frontend/features/list/listContainer.js" />
         <option value="$PROJECT_DIR$/frontend/Feature/featureProvider/featureProvider.jsx" />
         <option value="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetterContainer.jsx" />
         <option value="$PROJECT_DIR$/frontend/baseApp/store/actions/featureActions/featureActions.js" />
@@ -207,6 +173,15 @@
         <option value="$PROJECT_DIR$/frontend/baseApp/components/tabberView/tabberView.jsx" />
         <option value="$PROJECT_DIR$/frontend/features/list/list.jsx" />
         <option value="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx" />
+        <option value="$PROJECT_DIR$/frontend/features/list/listContainer.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/frontend/Feature/Feature.js" />
+        <option value="$PROJECT_DIR$/frontend/features/filters/filterButtonsContainer.js" />
+        <option value="$PROJECT_DIR$/frontend/UILibrary/uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel.jsx" />
+        <option value="$PROJECT_DIR$/frontend/features/filters/schemas/bvschema.js" />
+        <option value="$PROJECT_DIR$/frontend/features/filters/schemas/filterSchema.js" />
+        <option value="$PROJECT_DIR$/frontend/features/filters/schemas/weatherSchema.js" />
+        <option value="$PROJECT_DIR$/frontend/features/filters/filterButtons.jsx" />
       </list>
     </option>
   </component>
@@ -245,7 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -269,7 +243,15 @@
               <item name="importDemo" type="6f407253:SolutionExplorerNodeFileSystem" />
               <item name="frontend" type="6f407253:SolutionExplorerNodeFileSystem" />
               <item name="features" type="6f407253:SolutionExplorerNodeFileSystem" />
-              <item name="list" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="filters" type="6f407253:SolutionExplorerNodeFileSystem" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="importDemo" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="frontend" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="features" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="filters" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="schemas" type="6f407253:SolutionExplorerNodeFileSystem" />
             </path>
           </expand>
           <select />
@@ -277,6 +259,7 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,12 +301,15 @@
       <workItem from="1539466120541" duration="13982000" />
       <workItem from="1539485102129" duration="22592000" />
       <workItem from="1539636014541" duration="22700000" />
-      <workItem from="1539710725578" duration="14592000" />
+      <workItem from="1539710725578" duration="14650000" />
+      <workItem from="1539731405422" duration="38000" />
+      <workItem from="1539731474182" duration="22000" />
+      <workItem from="1539731855858" duration="910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75955000" />
+    <option name="totallyTimeSpent" value="76983000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,7 +321,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1002" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1002" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -348,7 +334,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1629393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16773163" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -375,21 +361,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/features/filters/schemas/filterSchema.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/features/Feature.js" />
-    <entry file="file://$PROJECT_DIR$/frontend/features/featurePoints.js" />
-    <entry file="file://$PROJECT_DIR$/app/util/readJson.js" />
     <entry file="file://$PROJECT_DIR$/frontend/features/Feature/features.js" />
     <entry file="file://$PROJECT_DIR$/frontend/authCheck/authCheck.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/authCheck/authcheckContainer.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -406,9 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#1#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -426,9 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -453,9 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -466,16 +431,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featureNameGetterLoader.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/util/featureNameGetterLoader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/featureNameGetterLoader.js" />
+    <entry file="file://$PROJECT_DIR$/frontend/util/featureNameGetterLoader.js" />
     <entry file="file://$PROJECT_DIR$/frontend/Feature/features.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -487,21 +444,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/webpackOutput/manifest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/webpackOutput/manifest.js" />
     <entry file="file://$PROJECT_DIR$/frontend/features/filters/featurePackage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -523,13 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/features/list/featurePackage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -541,9 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,37 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/features/list/listContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/Feature/Feature.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="225">
           <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetterContainer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -639,41 +548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/features/filters/filterButtonsContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/features/filters/filterButtons.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/features/list/list.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/baseApp/components/tabberView/tabberView.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#224#268#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,8 +567,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+        <state relative-caret-position="810">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/Feature/Feature.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetterContainer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/filters/filterButtonsContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/list/listContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/baseApp/components/tabberView/tabberView.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/UILibrary/uiHOCs/collapsibleFilterLabel/CollapsibleFilterLabel.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/filters/schemas/weatherSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/filters/schemas/filterSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/filters/schemas/bvschema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/filters/filterButtons.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="69" lean-forward="true" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

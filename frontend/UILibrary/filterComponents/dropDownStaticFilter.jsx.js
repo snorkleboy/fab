@@ -1,6 +1,6 @@
 import React from "react";
 
-import * as lodash from 'Lodash';
+import * as lodash from 'lodash';
 import * as filters from 'util/filters';
 import * as filterSeries from 'util/staticFilters';
 import { Dropdown, Search,Item } from 'semantic-ui-react'

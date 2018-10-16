@@ -20,5 +20,5 @@ export const mapStateToProps = (state, ownProps) => {
     }
 }
 
-export default asFeaturePartial(featurePoints.tabberView)
+export default asFeaturePartial(featurePoints.tabberView, "List")
 (connect(mapStateToProps, mapDispatchToProps)(List));

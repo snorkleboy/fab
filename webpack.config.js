@@ -5,8 +5,10 @@ var path = require('path');
 var webpack = require("webpack");
 const featureDirectory = "./frontend/features"
 const featureDirectoryNames = fs.readdirSync(featureDirectory)
-var plugins = [
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+var plugins = [
+    CleanWebpackPlugin
 ];
 var devPlugins = [
     new webpack.DefinePlugin({

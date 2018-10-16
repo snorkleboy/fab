@@ -25,4 +25,4 @@ export const mapStateToProps = (state, ownProps) => {
     }
 
 }
-export default asFeaturePartial(featurePoints.tabberView, decorators, "Filters")(connect(mapStateToProps, mapDispatchToProps)(FilterButtons))
+export default asFeaturePartial(featurePoints.tabberView, "Filters", decorators)(connect(mapStateToProps, mapDispatchToProps)(FilterButtons))

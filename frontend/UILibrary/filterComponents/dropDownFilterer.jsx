@@ -1,6 +1,6 @@
 import React from "react";
 import { Dropdown, Search,Item } from 'semantic-ui-react'
-import * as lodash from 'Lodash';
+import * as lodash from 'lodash';
 import Fuse from 'fuse.js'
 import filterFactory from "util/filterFactory";
 import {dateFilter} from "util/filters";

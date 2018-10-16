@@ -1,7 +1,7 @@
 import featurePoints from "./featurePoints"
 import featuresRegistrations from "./features.json"
 
-const asFeaturePartial = (destinationFeaturePoint,decorators = [],name = null) => (component)=>(
+const asFeaturePartial = (destinationFeaturePoint,name ,decorators = []) => (component)=>(
     {
         componentPackage:{
             destinationFeaturePoint,decorators,name,component
