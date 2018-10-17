@@ -12,7 +12,6 @@ function AsyncLoader (paths){
         return comp;
     }
     );
-    console.log({ components, paths, featureMap}, "BASE LOADER");
 
     return components.map(C=><C/>)
 }

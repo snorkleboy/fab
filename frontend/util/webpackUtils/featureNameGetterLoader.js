@@ -14,6 +14,5 @@ module.exports = function folderNameGetterLoader(input,map,c){
         this.emitError(new Error(resourcePath + " must be a featurePackage.js"))
     }
     features.push(featureName[0])
-    console.log({features,resourcePath})
     return;
 }

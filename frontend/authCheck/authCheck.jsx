@@ -12,12 +12,10 @@ class WeatherModule extends React.Component {
     }
     componentDidMount(){
         fetch("./data").then(res=>res.json()).then(res=>{
-            console.log({res})
             this.setState({name:res.url})
         })
     }
     render(){
-        console.log("render", Date.now(), this.props, this.props.loggedIn ? true : false, { LoginPage});
         if (!this.props.loggedIn){
             return (
             <main className='main'>

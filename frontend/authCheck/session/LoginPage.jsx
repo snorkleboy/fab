@@ -22,11 +22,9 @@ export default class WeatherModule extends React.Component {
     }
     post(e){
         e.preventDefault();
-        console.log(this.state);
         this.props.postUser(this.state)
     }
     render(){
-        console.log(this.state);
         return (
             <section className="loginSection">
                 {this.state.error?

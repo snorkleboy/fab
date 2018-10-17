@@ -33,6 +33,7 @@ subscriberRoleToFeaturesMap[subscribers[0]][roles[2]] = [
 ///
 ////////subscriber2
 subscriberRoleToFeaturesMap[subscribers[1]][roles[0]] = [
+    FeatureDescriptor(featureNames.quickTest),
     FeatureDescriptor(featureNames.list),
     FeatureDescriptor(featureNames.filters,
         [

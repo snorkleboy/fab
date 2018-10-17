@@ -29,14 +29,14 @@ export default class TabberView extends React.Component {
         </div>
     )
     render(){
-        const DefView =()=> (<ul >
+        const DefView =()=> (
+        <ul >
             <li>data</li>
             <li>promises of a better future</li>
         </ul>);
         
         const featureChildren = this.props.FeaturePointChildren? this.props.FeaturePointChildren.map(C=><C.component {...C.props}/>) :<DefView name="default view"/>;
 
-        console.log("TABBER VIEW",{featureChildren,unhydrated:this.props.FeaturePointChildren})
         
         return(
             <section className="mapContainer">

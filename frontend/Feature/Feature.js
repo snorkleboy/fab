@@ -21,6 +21,7 @@ const asDecorator = (decoratorName) => (featurePartial)=>{
     featurePartial.asDecorationTrigger = decoratorName;
     return featurePartial;
 }
+
 export {asFeaturePartial,featurePoints,featuresRegistrations};
 
 // //Feature

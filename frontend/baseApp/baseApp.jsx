@@ -7,7 +7,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import style from "./weatherModule.scss";
 import {featurePoints} from "Feature";
-
 const MainApp = () => (
     <div>
         <FeatureGetter />

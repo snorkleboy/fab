@@ -16,7 +16,6 @@ export default class FilterButtons extends React.Component{
     }
     render(){
         const componentMap = this.props.schema;
-        console.log("FILTERBUTTON",{props:this.props,componentMap})
         return(
             <section className="mainFilters leftMenuHeight greyBackground scrollable grid-row">
                 {Object.keys(componentMap).map(displayName=>{

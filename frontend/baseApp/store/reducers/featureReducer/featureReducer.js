@@ -16,11 +16,9 @@ function featureReducer (state = _featureReducer(), action){
             const loadedFeatures = action.payload
             newState.featuresToLoad = null;
             newState.featurePointToComponentMap = action.payload;
-            console.log({newState});
             return newState;
         case actionTypes.receiveUser:
             newState.featuresToLoad = action.payload.features
-            console.log({newState,action})
             return newState;
         default:
             return state

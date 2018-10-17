@@ -1,3 +1,5 @@
 export default {
-    "tabberView":"tabberView"
+    "tabberView":"tabberView",
+    "HeaderMenu":"HeaderMenu",
+    "registerReducers":"registerReducers",
 }

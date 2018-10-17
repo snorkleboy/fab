@@ -1,8 +1,13 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
+import createRootReducer from './rootReducer';
 
-import rootReducer from './rootReducer';
+let store;
+function reducerReplacer(){
+}
+reducerReplacer.setStore = (appStore)=>{console.log({appStore});(store = appStore)};
+reducerReplacer.injectReducers = (reducers)=> {const newRoot = createRootReducer(reducers);console.log("INJECT REDUCERS",{reducers,newRoot});store.replaceReducer(newRoot)}
 
 const configureStore = (preloadedState = {}) =>
 {
@@ -15,10 +20,10 @@ const configureStore = (preloadedState = {}) =>
     }
     return(
         createStore(
-            rootReducer,
+            createRootReducer({}),
             preloadedState,
             applyMiddleware(...middlewares)
         )
     );
 }
-export default configureStore;
+export {configureStore,reducerReplacer};

@@ -3,6 +3,9 @@ import ReactDom from 'react-dom'
 import style from './header.scss'
 import { Icon,Dropdown } from 'semantic-ui-react'
 import MessageDisplayer from 'UILibrary/messageDisplayer/messageDisplayer'
+import {FeatureProvider} from "featureLoader";
+import {featurePoints} from "Feature";
+import featureProvider from "frontend/Feature/featureProvider/featureProvider";
 
 export default class WeatherModule extends React.Component {
     constructor(props){
@@ -20,16 +23,25 @@ export default class WeatherModule extends React.Component {
                     <MessageDisplayer/>
                     <div className="right flex-row">
                         <i className="fas fa-user"></i>
-                        
-                        <Dropdown text={`Welcome, ${this.props.username}`}>
-                            <Dropdown.Menu>
-                                <Dropdown.Item text='Logout' onClick={this.props.logout}/>
-                                <Dropdown.Item text='Account' />
-                            </Dropdown.Menu>
-                        </Dropdown>
-                        
+                        <FeatureProvider featurePointName={featurePoints.HeaderMenu}>
+                            <Menu/>
+                        </FeatureProvider>
                     </div>
                 </div>
+            </section>
+        )
+    }
+}
+
+class Menu extends React.Component {
+    constructor(props){
+        super(props)
+    }
+    render(){
+        console.log(this.props);
+        return (
+            <section className={"flex-column"}>
+                {this.props.FeaturePointChildren.map(C=><C.component {...C.props}/>)}
             </section>
         )
     }

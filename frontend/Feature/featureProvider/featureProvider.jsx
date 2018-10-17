@@ -11,9 +11,11 @@ export default class featureProvider extends React.Component {
         }
         const featurePointName = this.props.featurePointName;
         const FeaturePointChildren = this.props.FeaturePointChildren;
-        console.log("FEATURE PROVIDER RENDER",{props:this.props},{children:this.props.children,featurePointName,FeaturePointChildren})
         return React.cloneElement(this.props.children,{FeaturePointChildren});
     }
     
 }
+
+
+
 

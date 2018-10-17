@@ -1,7 +1,8 @@
 {
   "featureNames":{
     "filters":"filters",
-    "list":"list"
+    "list":"list",
+    "quickTest":"quickTest"
   },
   
   "filters":{
@@ -12,6 +13,10 @@
   },
   
   "list":{
+    
+  },
+  
+  "quickTest":{
     
   }
 }

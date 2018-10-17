@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import asyncImport from "frontend/asyncImport"
 import _ from "lodash"
+import {reducerReplacer} from "baseApp/store/configureStore";
+
 const featureGetter = ({featuresToLoad,loadFeatures})=> {
     if (featuresToLoad){
-        console.log("FEATURE GETTER RENDER",featuresToLoad)
         const promises = [];
         Object.values(featuresToLoad).forEach(featureDescriptor=>{
             promises.push(
@@ -13,7 +14,7 @@ const featureGetter = ({featuresToLoad,loadFeatures})=> {
                         featurePackage._decoratorsToUse = featureDescriptor.decorators;
                         return featurePackage
                     })
-                    .then(featurePackage=>{console.log({featuresToLoad,featureDescriptor,featurePackage}); return featurePackage})
+                    .then(featurePackage=>{return featurePackage})
             )
         })
         Promise.all(promises)
@@ -29,6 +30,7 @@ function mapFeaturesToFeaturePoints(loadedFeatures){
     const featurePointToComponentMap = {};
 
     loadedFeatures.forEach((feature,i)=>{
+        
         const decoratorNames = feature._decoratorsToUse;
         feature.forEach((componentPackageWrapper,k)=>{
             const componentPackage = componentPackageWrapper.componentPackage;
@@ -44,7 +46,6 @@ function mapFeaturesToFeaturePoints(loadedFeatures){
                     })
                 }
                 componentPackage.props.name = componentPackage.name;
-                console.log({componentPackage,decoratorNames,feature});
 
                 if(featurePointToComponentMap[destination]){
                     featurePointToComponentMap[destination].push(componentPackage)
@@ -55,7 +56,15 @@ function mapFeaturesToFeaturePoints(loadedFeatures){
         })
         
     })
-
+    if (featurePointToComponentMap["registerReducers"]){
+        const reducers = {};
+        const reducerPackages = featurePointToComponentMap["registerReducers"];
+        reducerPackages.forEach(redPackage=>{
+            reducers[redPackage.name]  = redPackage.component
+        })
+        console.log({reducerPackages,reducers,featurePointToComponentMap})
+        reducerReplacer.injectReducers(reducers)
+    }
     return featurePointToComponentMap
 }
 
