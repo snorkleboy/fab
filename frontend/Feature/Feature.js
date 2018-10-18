@@ -1,5 +1,5 @@
 import featurePoints from "./featurePoints"
-
+import SimpleFeaturePoint from './simpleFeaturePoint'
 const asFeaturePartial = (destinationFeaturePoint,name ,decorators = []) => {
    const makePackage = (component) => (
         {
@@ -20,7 +20,7 @@ const asDecorator = (name,props)=>({
     name,props
 })
 
-export {asFeaturePartial,featurePoints};
+export {asFeaturePartial,featurePoints,SimpleFeaturePoint};
 
 // //Feature
 // //-a collection of ComponentPackages for mapping to featurePoints and decorating.

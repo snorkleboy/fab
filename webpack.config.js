@@ -7,7 +7,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 
-
 var plugins = [
     CleanWebpackPlugin
 ];
@@ -84,8 +83,10 @@ const entryOptions = {
     plugins,
     resolve,
     devtool,
-    bail: true,
-    module:moduleObj
+    module:moduleObj,
+    watchOptions: {
+        poll: true
+    }
 }
 
 console.log({

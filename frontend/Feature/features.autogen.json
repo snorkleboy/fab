@@ -1,5 +1,6 @@
 {
   "_featureNames": {
+    ".DS_Store": ".DS_Store",
     "filters": "filters",
     "list": "list",
     "quickTest": "quickTest",

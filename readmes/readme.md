@@ -4,16 +4,15 @@ there is one rule and two guidelines
 1) Never directly mutate state, use setState(modifiedCopyOfPreviousState) or setState({sameKey:{sameKey:"new value"}})
 - - most standard methods of cloning an object in javascript are shallow, be vigilant when creating nested objects in state and updating them or changes to state will unpredictably not be rendered. 
 a) if you are considering modifying the dom directly reconsider it atleast once. You can probably turn something into a managed component and achieve the same affect.
-b) pay attention to unique key warnings. The potential bugs from that are generally not worth the cost
+b) avoid getting keys by string value, create something like an enum object and reference the values from that to avoid name mismatchn errors. there is no static type checking to help you on your way. 
 
 React follows a MVC pattern in a component based framework. Every component has managed state as its model, some event handlers that act as controllers, and views that render based on state. Every component can render other components and inject 'props'. These props can be anything, another components state, event handlers, even other components. 
 
 tech primer-
-react uses JSX. We use es16+ js. You can use sass to style programatically. You can use jest to test.  You need webpack to transform and bundle the code into something a browser can execute.
+react uses JSX. We use es16+ js. You can use sass to style programatically. You can use jest to test.  You need webpack to transform and bundle the code into something a browser can execute. There is some code with webpack that automatically registers your features and decorators and creates sanity tests.
 
 basic 
 stateless components without props
-- pure functions(stateless)
 
 the most basic react component is simply a string
 
@@ -36,6 +35,7 @@ stateless components with props.
 - usefull for extracting view logic from the render section of other components
 - just like state never modify props directly. If its supposed to be some kind of managed state its supposed to have some kind of event handler to change it. 
 ```
+// this is a destructuring sytax 
 const NameChecker = ({name,onTrue,onFalse})=>(
         <div>
             <h1>is {name} your name?</h1>
@@ -44,7 +44,7 @@ const NameChecker = ({name,onTrue,onFalse})=>(
         </div>
     )
 
-//same as doing to 
+//same as doing ,
 const NameCheckerB = (props)=>{
     const (name,onTrue,onFalse) = props
     return(
@@ -88,11 +88,12 @@ const NameCheckerC = ({name,onClick})=> (
 const IsArtem = ({answer = "who knows"})=> <h1>is this artem? - {answer}</h1>
 
 
-two more quick notes
+2 quick note
 ```
-* mapping thing
-- need keys unique to the content of the element. Do not use the interator position, as this is unque to the array position which is likely to change for the same content. 
-- this is a side affect of reacts magic rendering system. It creates its own light weight version of the dom using component and key names to determine which actual HTMLDomElements need to be re rendered. if the components and the keys stay the same it will not rerender. If the keys get duplicated or improperly switched you may see odd results. 
+* mapping through components
+- you can put an array of components inside of jsx like so: <..>{arrayOfComponents}</> . You often see something like names.map(name=><h1 key={name}>{name}</h1>), where map returns an array of components based on something else. 
+- need keys unique to the content of the element. Do not use the interator position, as this is unque to the array position which is likely to change for the same content. If you have an array of components displaying names, each name should recieve the same key regardless of what other components are rendered from the array.   
+- - this is a side affect of reacts magic rendering system. It creates its own light weight version of the dom using component and key names to determine which actual HTMLDomElements need to be re rendered. if the components and the keys stay the same it will not rerender. If the keys get duplicated or improperly switched you may see odd results. 
 ```
 const NameCheckerB = ({componentArray, valueArray})=>{
     return(
@@ -105,21 +106,10 @@ const NameCheckerB = ({componentArray, valueArray})=>{
     )
 }
 
-* render children
 ```
-const Wrapper = ({children})=>{
-    return(
-        <div>
-            {children}
-        </div>
-    )
-}
-const Basic = ()=><h1>"hello"</h1>;'
-return
-<Wrapper>
-    <Basic>
-    <Basic>
-</Wrapper>
+
+higher order Components
+```
 ```
 
 
@@ -138,11 +128,21 @@ One weakness of this system is that as you add functionality to any app the flow
     </footer>
 </div>
 ```
-how do you get state from IsArtem to a component that is sideways to it in the reactDom tree? 
+how do you get state from IsArtem to a component that is sideways to it in the reactDom tree? Standard react strategy would be to wrap everything in another component and lift IsArtems state up to that component. Over time this leads to difficult to debug chains of handlers and frequent massive refactors to lift up state from components you did not expect to have to.
 
-putting shared state in a global scope object that you modify willy nilly:0
-making a singleton object with getters and setters that can be imported : 1
-wrapping everything in a single component that injects its state and handlers into components beneath it:2
-wrapping everything in a component that accesses a singleton object and can inject state and handlers into any component: 99
+Redux solves both problems of chaotic state management and prop drilling. Redux is not a mvc pattern, but flux. The principle idea behind the flux archetecture relative to MVC is to create a uni directional flow of control. Instead of data going back and forth from model to controller to view to controller to model. Flux achieves this by splitting a controller into two, Actions which atomic http-like requests to change state, and reducers which respond to actions and change state accordingly. views get rendered from state with handlers that dispatch actions, reducers get actions and change state, views get rendered with handlers that dispathc actions. 
+ 
+ 
+redux provides a simple higher order component that given a fuction to resolve data and functions from the store it can wrap around your regular react component and inject redux state in as props:
+```
+```
+
+reducers
+
+actions
+
+state init
+
+the state is created at the beginning of the app along with the store, it is a simple js object (a hashmap). Redux is configured with a group of reducers for it to use 
 
 

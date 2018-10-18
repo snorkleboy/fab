@@ -3,9 +3,10 @@ import ReactDom from 'react-dom'
 import style from './header.scss'
 import { Icon,Dropdown } from 'semantic-ui-react'
 import MessageDisplayer from 'UILibrary/messageDisplayer/messageDisplayer'
-import {FeatureProvider} from "featureLoader";
+// import {FeatureProvider} from "featureLoader";
 import {featurePoints} from "Feature";
-import featureProvider from "frontend/Feature/featureProvider/featureProvider";
+// import featureProvider from "frontend/Feature/featureProvider/featureProvider";
+import {SimpleFeaturePoint} from "Feature";
 
 export default class WeatherModule extends React.Component {
     constructor(props){
@@ -23,9 +24,8 @@ export default class WeatherModule extends React.Component {
                     <MessageDisplayer/>
                     <div className="right flex-row">
                         <i className="fas fa-user"></i>
-                        <FeatureProvider featurePointName={featurePoints.HeaderMenu}>
-                            <Menu/>
-                        </FeatureProvider>
+                        <SimpleFeaturePoint featurePointName={featurePoints.HeaderMenu}/>
+
                     </div>
                 </div>
             </section>
