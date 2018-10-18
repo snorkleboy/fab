@@ -7,12 +7,13 @@ const testTemplate = fs.readFileSync("./frontend/Feature/webpackUtils/autoTest/t
 
 function helpRegister() {
     const decorators = {}
-
+    const properlyMadeFeatures = [];
     featureDirectoryNames.forEach(name => {
         const featureHasPackage = fs.existsSync(`${featureDirectory}/${name}/featurePackage.js`);
         if (!featureHasPackage) {
             process.emitWarning(`feature:${name} - `+"Feature must have featurePackage.js to be loaded but '" + `${featureDirectory}/${name}/featurePackage.js` + "' does not exist ");
         }else{
+            properlyMadeFeatures.push(name);
             const featureHasDecorators = fs.existsSync(`${featureDirectory}/${name}/decorators.json`);
             if (featureHasDecorators) {
                 try {
@@ -30,7 +31,7 @@ function helpRegister() {
     })
 
     const manifest = {_featureNames:{}};
-    featureDirectoryNames.forEach(name=>{
+    properlyMadeFeatures.forEach(name=>{
         manifest._featureNames[name]=name
         manifest[name]=decorators[name];
     });

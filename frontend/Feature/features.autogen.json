@@ -1,10 +1,9 @@
 {
   "_featureNames": {
-    ".DS_Store": ".DS_Store",
     "filters": "filters",
     "list": "list",
     "quickTest": "quickTest",
-    "workOrderPoster": "workOrderPoster"
+    "tutorialStartingOut": "tutorialStartingOut"
   },
   "filters": {
     "Weather": "Weather",

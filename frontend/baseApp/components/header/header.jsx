@@ -6,7 +6,7 @@ import MessageDisplayer from 'UILibrary/messageDisplayer/messageDisplayer'
 // import {FeatureProvider} from "featureLoader";
 import {featurePoints} from "Feature";
 // import featureProvider from "frontend/Feature/featureProvider/featureProvider";
-import {SimpleFeaturePoint} from "Feature";
+import SimpleFeaturePoint from "util/simpleFeaturePoint";
 
 export default class WeatherModule extends React.Component {
     constructor(props){
@@ -25,7 +25,6 @@ export default class WeatherModule extends React.Component {
                     <div className="right flex-row">
                         <i className="fas fa-user"></i>
                         <SimpleFeaturePoint featurePointName={featurePoints.HeaderMenu}/>
-
                     </div>
                 </div>
             </section>

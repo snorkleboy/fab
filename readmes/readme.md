@@ -1,4 +1,4 @@
-react is a rendering and state management system.
+coreact is a rendering and state management system.
 
 there is one rule and two guidelines
 1) Never directly mutate state, use setState(modifiedCopyOfPreviousState) or setState({sameKey:{sameKey:"new value"}})

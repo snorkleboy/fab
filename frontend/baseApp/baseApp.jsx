@@ -6,7 +6,8 @@ import {FeatureProvider,FeatureGetter} from "featureLoader"
 import React from "react";
 import ReactDOM from "react-dom";
 import style from "./weatherModule.scss";
-import {featurePoints,SimpleFeaturePoint} from "Feature"
+import {featurePoints} from "Feature";
+import SimpleFeaturePoint from 'util/simpleFeaturePoint'
 const MainApp = () => (
     <div>
         <FeatureGetter />
