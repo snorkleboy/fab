@@ -1,10 +1,14 @@
 {
   "_featureNames": {
+    "decoratedRedditTutorial": "decoratedRedditTutorial",
     "filters": "filters",
     "list": "list",
     "quickTest": "quickTest",
     "reddit": "reddit",
     "tutorialStartingOut": "tutorialStartingOut"
+  },
+  "decoratedRedditTutorial": {
+    "typeChange": "typeChange"
   },
   "filters": {
     "Weather": "Weather",

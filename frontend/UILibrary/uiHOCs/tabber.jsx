@@ -19,7 +19,7 @@ export default class Tabber extends Component {
         return (
         <Menu.Item
             id={name+"tab"}
-            content={displayName? displayName : name}
+            content={name? name : displayName}
             name={name}
             active={localActive}
             onClick={this.handleItemClick}
