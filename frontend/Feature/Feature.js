@@ -16,10 +16,9 @@ const asFeaturePartial = (destinationFeaturePoint,name ,decorators = []) => {
     return makePackage;
 }
 
-const asDecorator = (decoratorName) => (featurePartial)=>{
-    featurePartial.asDecorationTrigger = decoratorName;
-    return featurePartial;
-}
+const asDecorator = (name,props)=>({
+    name,props
+})
 
 export {asFeaturePartial,featurePoints};
 

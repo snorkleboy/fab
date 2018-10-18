@@ -56,21 +56,20 @@ const moduleObj = {rules}
 const devtool = productionMode? "none" : 'cheap-module-eval-source-map'
 const resolve = {
     extensions: ['.js', '.jsx','.scss'],
-    alias: {
-        app:path.resolve(__dirname, './app'),
-        baseApp: path.resolve(__dirname, './frontend/baseApp/'),
-        baseStyles: path.resolve(__dirname, './frontend/baseApp/styles'),
-        baseRedux: path.resolve(__dirname, './frontend/baseApp/store'),
-        features: path.resolve(__dirname, './frontend/features'),
-        Feature:path.resolve(__dirname,'./frontend/Feature/Feature.js'),
-        featureLoader:path.resolve(__dirname,'./frontend/Feature/featureProvider/featureLoader'),
-        UILibrary: path.resolve(__dirname, './frontend/UILibrary/'),
-        util: path.resolve(__dirname, './frontend/util/'),
-        frontend: path.resolve(__dirname, './frontend/'),
-    }
 };
-
-            
+//
+// alias: {
+//     app:path.resolve(__dirname, './app'),
+//         baseApp: path.resolve(__dirname, './frontend/baseApp/'),
+//         baseStyles: path.resolve(__dirname, './frontend/baseApp/styles'),
+//         baseRedux: path.resolve(__dirname, './frontend/baseApp/store'),
+//         features: path.resolve(__dirname, './frontend/features'),
+//         Feature:path.resolve(__dirname,'./frontend/Feature/Feature.js'),
+//         featureLoader:path.resolve(__dirname,'./frontend/Feature/featureProvider/featureLoader'),
+//         UILibrary: path.resolve(__dirname, './frontend/UILibrary/'),
+//         util: path.resolve(__dirname, './frontend/util/'),
+//         frontend: path.resolve(__dirname, './frontend/'),
+// }
 const entryOptions = {
     mode: productionMode ? "production" : "development",
     entry: {
