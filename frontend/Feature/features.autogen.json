@@ -3,11 +3,13 @@
     "filters": "filters",
     "list": "list",
     "quickTest": "quickTest",
+    "reddit": "reddit",
     "tutorialStartingOut": "tutorialStartingOut"
   },
   "filters": {
     "Weather": "Weather",
     "BVFilters": "BVFilters",
-    "Default": "Default"
+    "Default": "Default",
+    "randomDec": "randomDec"
   }
 }
