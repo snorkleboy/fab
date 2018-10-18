@@ -1,11 +1,12 @@
 const productionMode = (process.argv[3] === "production")
-const fs = require('fs');
 
 var path = require('path');
 var webpack = require("webpack");
-const featureDirectory = "./frontend/features"
-const featureDirectoryNames = fs.readdirSync(featureDirectory)
+require("./frontend/Feature/webpackUtils/syncFeatureHelper")();
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+
+
 
 var plugins = [
     CleanWebpackPlugin
@@ -30,10 +31,7 @@ plugins = plugins.concat(
     productionMode? prodPlugins : devPlugins
 );
 
-// {
-//     test:/\/frontend\/features/,
-//         use:"./frontend/util/webpackUtils/featureNameGetterLoader"
-// }
+
 const rules = [
     {
         test: /\.jsx?$/,
@@ -52,7 +50,6 @@ const rules = [
             'sass-loader',
         ],
     }
-    
 ]
 
 const moduleObj = {rules}
@@ -80,7 +77,7 @@ const entryOptions = {
         WeatherModuleEntry:'./frontend/entry.jsx',
     },
     output: {
-        filename: '[name].js',
+        filename: '[name].bundle.js',
         publicPath: '/webpackOutput/',
         path: path.resolve(__dirname, 'public/webpackOutput'),
         chunkFilename: '[name].chunk.js',

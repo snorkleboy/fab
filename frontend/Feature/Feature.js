@@ -1,5 +1,4 @@
 import featurePoints from "./featurePoints"
-import featuresRegistrations from "./features.json"
 
 const asFeaturePartial = (destinationFeaturePoint,name ,decorators = []) => {
    const makePackage = (component) => (
@@ -22,7 +21,7 @@ const asDecorator = (decoratorName) => (featurePartial)=>{
     return featurePartial;
 }
 
-export {asFeaturePartial,featurePoints,featuresRegistrations};
+export {asFeaturePartial,featurePoints};
 
 // //Feature
 // //-a collection of ComponentPackages for mapping to featurePoints and decorating.

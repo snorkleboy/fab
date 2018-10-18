@@ -6,8 +6,8 @@ subscribers.forEach(s=>{
 })
 
 
-const featuresAndDecorators = require("../../frontend/Feature/features");
-const featureNames = featuresAndDecorators.featureNames;
+const featuresAndDecorators = require("../../frontend/Feature/features.autogen.json");
+const featureNames = featuresAndDecorators._featureNames;
 const decorators = featuresAndDecorators;
 console.log("HERE",{featuresAndDecorators})
 

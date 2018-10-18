@@ -1,0 +1,59 @@
+
+> WeatherModule@1.0.0 webpack /Users/akharshan/projects/importDemo
+> webpack --mode development --config webpack.config.js
+
+{ productionMode: false,
+  entryOptions: 
+   { mode: 'development',
+     entry: { WeatherModuleEntry: './frontend/entry.jsx' },
+     output: 
+      { filename: '[name].bundle.js',
+        publicPath: '/webpackOutput/',
+        path: '/Users/akharshan/projects/importDemo/public/webpackOutput',
+        chunkFilename: '[name].chunk.js' },
+     plugins: [ [Function: CleanWebpackPlugin], [DefinePlugin] ],
+     resolve: { extensions: [Array], alias: [Object] },
+     devtool: 'cheap-module-eval-source-map',
+     bail: true,
+     module: { rules: [Array] } },
+  plugins: 
+   [ [Function: CleanWebpackPlugin],
+     DefinePlugin { definitions: [Object] } ] }
+Hash: aaa1e65ee7108964cad6
+Version: webpack 4.8.3
+Child
+    Hash: aaa1e65ee7108964cad6
+    Time: 4750ms
+    Built at: 10/17/2018 7:33:34 PM
+                                                                                                            Asset      Size                                                                                                Chunks             Chunk Names
+                                                  mainAppAsync/components-tabberView-tabberViewContainer.chunk.js  5.27 KiB                                                mainAppAsync/components-tabberView-tabberViewContainer  [emitted]  mainAppAsync/components-tabberView-tabberViewContainer
+                                                                                     WeatherModuleEntry.bundle.js  8.17 MiB                                                                                    WeatherModuleEntry  [emitted]  WeatherModuleEntry
+                                                          mainAppAsync/components-header-HeaderContainer.chunk.js  3.45 KiB                                                        mainAppAsync/components-header-HeaderContainer  [emitted]  mainAppAsync/components-header-HeaderContainer
+                                                              mainAppAsync/components-header-header-scss.chunk.js  8.62 KiB                                                            mainAppAsync/components-header-header-scss  [emitted]  mainAppAsync/components-header-header-scss
+                                                             mainAppAsync/components-tabberView-leftMenu.chunk.js  9.13 KiB                                                           mainAppAsync/components-tabberView-leftMenu  [emitted]  mainAppAsync/components-tabberView-leftMenu
+                                                                  mainAppAsync/components-tabberView-map.chunk.js  20.3 KiB                                                                mainAppAsync/components-tabberView-map  [emitted]  mainAppAsync/components-tabberView-map
+                                                           mainAppAsync/components-tabberView-tabberView.chunk.js  49.7 KiB                                                         mainAppAsync/components-tabberView-tabberView  [emitted]  mainAppAsync/components-tabberView-tabberView
+                                                                                                 mainApp.chunk.js  32.5 KiB                                                                                               mainApp  [emitted]  mainApp
+                                                                          mainAppAsync/style-colorScheme.chunk.js  5.11 KiB                                                                        mainAppAsync/style-colorScheme  [emitted]  mainAppAsync/style-colorScheme
+                                                                              mainAppAsync/style-general.chunk.js    14 KiB                                                                            mainAppAsync/style-general  [emitted]  mainAppAsync/style-general
+                                                                                mainAppAsync/style-reset.chunk.js     8 KiB                                                                              mainAppAsync/style-reset  [emitted]  mainAppAsync/style-reset
+                                                                              mainAppAsync/weatherModule.chunk.js  5.43 KiB                                                                            mainAppAsync/weatherModule  [emitted]  mainAppAsync/weatherModule
+            mainApp~mainAppAsync/components-header-HeaderContainer~mainAppAsync/components-header-header.chunk.js   199 KiB          mainApp~mainAppAsync/components-header-HeaderContainer~mainAppAsync/components-header-header  [emitted]  mainApp~mainAppAsync/components-header-HeaderContainer~mainAppAsync/components-header-header
+    vendors~mainApp~mainAppAsync/components-header-HeaderContainer~mainAppAsync/components-header-header.chunk.js  82.5 KiB  vendors~mainApp~mainAppAsync/components-header-HeaderContainer~mainAppAsync/components-header-header  [emitted]  vendors~mainApp~mainAppAsync/components-header-HeaderContainer~mainAppAsync/components-header-header
+    Entrypoint WeatherModuleEntry = WeatherModuleEntry.bundle.js
+    [./frontend/asyncLoader.jsx] 1.23 KiB {WeatherModuleEntry} [built]
+    [./frontend/authCheck/authCheck.jsx] 4.16 KiB {WeatherModuleEntry} [built]
+    [./frontend/authCheck/authcheckContainer.js] 846 bytes {WeatherModuleEntry} [built]
+    [./frontend/authCheck/session/LoginPageContainer.js] 1.29 KiB {WeatherModuleEntry} [built]
+    [./frontend/baseApp/baseApp.jsx] 1.55 KiB {mainApp} [built]
+    [./frontend/baseApp/store/actions/mapActions/mapActions.js] 3.34 KiB {WeatherModuleEntry} [built]
+    [./frontend/baseApp/store/configureStore.js] 1.48 KiB {WeatherModuleEntry} [built]
+    [./frontend/baseApp/store/reducers/featureReducer/featureReducer.js] 1.85 KiB {WeatherModuleEntry} [built]
+    [./frontend/baseApp/store/reducers/locationReducers/combiner.js] 1.92 KiB {WeatherModuleEntry} [built]
+    [./frontend/baseApp/store/reducers/sessionReducer.js] 1.5 KiB {WeatherModuleEntry} [built]
+    [./frontend/baseApp/store/reducers/uiReducer.js] 2.76 KiB {WeatherModuleEntry} [built]
+    [./frontend/baseApp/store/reducers/websocketStateReducer.js] 635 bytes {WeatherModuleEntry} [built]
+    [./frontend/baseApp/store/rootReducer.js] 1.42 KiB {WeatherModuleEntry} [built]
+    [./frontend/entry.jsx] 960 bytes {WeatherModuleEntry} [built]
+    [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 509 bytes {WeatherModuleEntry} [built]
+        + 762 hidden modules
