@@ -23,5 +23,4 @@ const mapStateToProps = (state, ownProps) => {
         currentType:state.reddit.type
     }
 }
-
-export default {name:decoratorNames.typeChange,props:{Control:connect(mapStateToProps, mapDispatchToProps)(ChangeTypeButton)}};
+export default connect(mapStateToProps, mapDispatchToProps)(ChangeTypeButton);

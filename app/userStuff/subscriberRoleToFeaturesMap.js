@@ -19,15 +19,16 @@ const FeatureDescriptor = (featureDirectoryName,decorators)=>({featureDirectoryN
 ///
 ////////subscriber1
 subscriberRoleToFeaturesMap[subscribers[0]][roles[0]] = [
+    FeatureDescriptor(featureNames.list),
+    FeatureDescriptor(featureNames.decoratedRedditTutorial)
+]
+subscriberRoleToFeaturesMap[subscribers[0]][roles[1]] = [
+    FeatureDescriptor(featureNames.list),
     FeatureDescriptor(featureNames.decoratedRedditTutorial,
         [
             decorators.decoratedRedditTutorial.typeChange
         ]
-    ),
-]
-subscriberRoleToFeaturesMap[subscribers[0]][roles[1]] = [
-    FeatureDescriptor(featureNames.list)
-]
+    ),]
 subscriberRoleToFeaturesMap[subscribers[0]][roles[2]] = [
     FeatureDescriptor(featureNames.list),
     FeatureDescriptor(featureNames.list)

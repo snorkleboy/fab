@@ -38,7 +38,7 @@ function mapFeaturesToFeaturePoints(loadedFeatures){
                 const destination = componentPackage.destinationFeaturePoint;
                 componentPackage.props = {}
 
-                if (componentPackage.decorators){
+                if (decoratorNames && componentPackage.decorators){
                     componentPackage.decorators.forEach(decorator=>{
                         if (decoratorNames.includes(decorator.name)){
                             componentPackage.props = _.merge({},componentPackage.props,decorator.props)
