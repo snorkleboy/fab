@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eddb22ff-93aa-4c27-8388-76c233ad50d6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.importDemo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.importDemo1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Feature/webpackUtils/autoTest/testTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Feature/webpackUtils/autoTest/testTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/__tests__/decoratedRedditTutorial__autoGenSanityTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/__tests__/decoratedRedditTutorial__autoGenSanityTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/changeTypeButton.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControls.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControls.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControlsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControlsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/featurePackage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/featurePackage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/webpackOutput/mainApp~mainAppAsync/components-header-HeaderContainer~mainAppAsync/components-header-header.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/webpackOutput/mainApp~mainAppAsync/components-header-HeaderContainer~mainAppAsync/components-header-header.chunk.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/public/webpackOutput/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,29 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="displayRedditList.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/features/reddit/components/displayRedditList.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testTemplate.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/Feature/webpackUtils/autoTest/testTemplate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="redditControlsContainer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControlsContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="315">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -52,50 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decoratedRedditTutorial__autoGenSanityTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/__tests__/decoratedRedditTutorial__autoGenSanityTest.js">
+      <file leaf-file-name="redditControls.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControls.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="decorators.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/decorators.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="features.autogen.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/Feature/features.autogen.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subscriberRoleToFeaturesMap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="changeTypeButton.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/decorators/changeTypeButton.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+            <state relative-caret-position="105">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -111,6 +47,15 @@
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subscriberRoleToFeaturesMap.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -199,15 +144,15 @@
         <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/decorators.json" />
         <option value="$PROJECT_DIR$/frontend/features/filters/schemas/decorators.js" />
         <option value="$PROJECT_DIR$/frontend/UILibrary/uiHOCs/tabber.jsx" />
-        <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControls.jsx" />
         <option value="$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js" />
         <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/changeTypeButton.jsx" />
         <option value="$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx" />
         <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/featurePackage.js" />
         <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/decorators/changeTypeButton.jsx" />
-        <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControlsContainer.js" />
         <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/__tests__/decoratedRedditTutorial__autoGenSanityTest.js" />
         <option value="$PROJECT_DIR$/frontend/Feature/webpackUtils/autoTest/testTemplate.js" />
+        <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControlsContainer.js" />
+        <option value="$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControls.jsx" />
       </list>
     </option>
   </component>
@@ -263,22 +208,22 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="importDemo" type="6f407253:SolutionExplorerNodeFileSystem" />
               <item name="frontend" type="6f407253:SolutionExplorerNodeFileSystem" />
-              <item name="Feature" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="features" type="6f407253:SolutionExplorerNodeFileSystem" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="importDemo" type="6f407253:SolutionExplorerNodeFileSystem" />
               <item name="frontend" type="6f407253:SolutionExplorerNodeFileSystem" />
-              <item name="Feature" type="6f407253:SolutionExplorerNodeFileSystem" />
-              <item name="webpackUtils" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="features" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="decoratedRedditTutorial" type="6f407253:SolutionExplorerNodeFileSystem" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="importDemo" type="6f407253:SolutionExplorerNodeFileSystem" />
               <item name="frontend" type="6f407253:SolutionExplorerNodeFileSystem" />
-              <item name="Feature" type="6f407253:SolutionExplorerNodeFileSystem" />
-              <item name="webpackUtils" type="6f407253:SolutionExplorerNodeFileSystem" />
-              <item name="autoTest" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="features" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="decoratedRedditTutorial" type="6f407253:SolutionExplorerNodeFileSystem" />
+              <item name="components" type="6f407253:SolutionExplorerNodeFileSystem" />
             </path>
           </expand>
           <select />
@@ -349,12 +294,12 @@
       <workItem from="1539885022711" duration="1415000" />
       <workItem from="1539890086035" duration="2657000" />
       <workItem from="1539895124088" duration="1668000" />
-      <workItem from="1539897728304" duration="7936000" />
+      <workItem from="1539897728304" duration="8248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113295000" />
+    <option name="totallyTimeSpent" value="113607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,16 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControls.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/displayRedditListContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -703,13 +638,6 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/features/reddit/components/displayRedditList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -723,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/Feature/features.autogen.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/Feature/featureProvider/featureGetter.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -737,6 +658,48 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="79" column="62" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/Feature/webpackUtils/autoTest/testTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/reddit/components/displayRedditList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/__tests__/decoratedRedditTutorial__autoGenSanityTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/decorators.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/Feature/features.autogen.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -753,7 +716,7 @@
     <entry file="file://$PROJECT_DIR$/app/userStuff/subscriberRoleToFeaturesMap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
-          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -769,42 +732,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControlsContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/decorators.json">
+    <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/components/redditControls.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/features/decoratedRedditTutorial/__tests__/decoratedRedditTutorial__autoGenSanityTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="79" column="62" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/Feature/webpackUtils/autoTest/testTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
