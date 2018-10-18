@@ -7,6 +7,7 @@ const reducer = (state = {"newREDUCER":true},action)=>{
     return copy;
 }
 const quickTest = [
+    asFeaturePartial(featurePoints.Main,"otherthing")(component),
     asFeaturePartial(featurePoints.HeaderMenu,"displayName")(component),
     asFeaturePartial(featurePoints.registerReducers,"newReducer")(reducer)
 ]

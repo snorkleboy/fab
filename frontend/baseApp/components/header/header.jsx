@@ -33,16 +33,3 @@ export default class WeatherModule extends React.Component {
     }
 }
 
-class Menu extends React.Component {
-    constructor(props){
-        super(props)
-    }
-    render(){
-        console.log(this.props);
-        return (
-            <section className={"flex-column"}>
-                {this.props.FeaturePointChildren.map(C=><C.component {...C.props}/>)}
-            </section>
-        )
-    }
-}

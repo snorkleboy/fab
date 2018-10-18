@@ -29,7 +29,7 @@ export default class Tabber extends Component {
     closeButton(){
         const direction = this.state.open? "left" : "right";
         return(
-            <div className={`left100 top56 height-60 width-20 posAbs greyBackground slideIcon`} onClick={this.handleOpenToggle.bind(this)} >
+            <div className={`left100 top56 height-60 width-20 greyBackground slideIcon`} onClick={this.handleOpenToggle.bind(this)} >
                 <i className={`fas fa-chevron-${direction} `} ></i>
             </div>
         )
@@ -48,12 +48,11 @@ export default class Tabber extends Component {
             }
         }
         return (
-            <div className={`${!this.props.noClose? "posAbs":null} ${this.state.open? "left0px" : "left-350px"} ${this.props.css}`}>
+            <div className={`${this.props.css}`}>
                 {header}
                 <Menu attached='top' tabular>
                     { children.map(child=> this.makeItem( Object.assign({},child.props,{localActive:child.props.name===activeItem})) ) }
                 </Menu>
-                {!this.props.noClose?  this.closeButton() : null}
                 <Segment attached='bottom' >
                     {children.find(child=>child.props.name===activeItem)}
                 </Segment>

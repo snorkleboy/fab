@@ -6,14 +6,17 @@ import {FeatureProvider,FeatureGetter} from "featureLoader"
 import React from "react";
 import ReactDOM from "react-dom";
 import style from "./weatherModule.scss";
-import {featurePoints} from "Feature";
+import {featurePoints,SimpleFeaturePoint} from "Feature"
 const MainApp = () => (
     <div>
         <FeatureGetter />
         <Header />
-        <FeatureProvider featurePointName={featurePoints.tabberView}>
-            <TabberView />
-        </FeatureProvider>
+        <div className={"flex-row"}>
+            <FeatureProvider featurePointName={featurePoints.tabberView}>
+                <TabberView />
+            </FeatureProvider>
+            <SimpleFeaturePoint featurePointName={featurePoints.Main}/>
+        </div>
         
         <Modal />
     </div>
