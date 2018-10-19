@@ -27,8 +27,7 @@ export default [
 ];
 ```
  you now have a feature ready to be activated for a client. 
- -To toggle it on go to ./app/userStuff/subscriberRoleToFeaturesMap.js
-- In any subscriberRoleToFeaturesMap[subscriber][role] = [(...)] you can put in your feature inside a featureDescriptor. We have no decorators so we just need to register the featureName(same as the directory name of your feature), which should have automatically been added to the featureNames enum in "Feature/features.json" during the webpack process:
+ -To toggle it on go to ./app/userStuff/subscriberRoleToFeaturesMap. adn add a featureDesciptor to some users
 ```
 /// ./app/userStuff/subscriberRoleToFeaturesMap.js
 
