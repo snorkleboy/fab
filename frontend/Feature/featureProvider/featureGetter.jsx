@@ -37,7 +37,6 @@ function mapFeaturesToFeaturePoints(loadedFeatures){
             if (!componentPackage.asDecorator || decoratorNames.includes(componentPackage.asDecorator)){
                 const destination = componentPackage.destinationFeaturePoint;
                 componentPackage.props = {}
-
                 if (decoratorNames && componentPackage.decorators){
                     componentPackage.decorators.forEach(decorator=>{
                         if (decoratorNames.includes(decorator.name)){
