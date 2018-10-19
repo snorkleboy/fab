@@ -1,3 +1,10 @@
+## how to run
+- clone the repository
+- npm install
+- npm run webpack
+- node app
+- webpack should have ran and you node app should start a server on port 3000
+
 # tutorial
 
 ##### I just want to get something on the screen
