@@ -97,16 +97,20 @@ export default [
 ```
 and run the tests. You should now be passing the first test. All we need to do now is register the component to a featurePoint
 ###### asFeaturePartial
-asFeaturePartial helps you wrap your components properly, it is used similar to Redux' connect function:
+asFeaturePartial helps you wrap your components properly, it is used similar to Redux' connect function or React routers withRouter:
  - connect:
 ```
 import { connect } from 'react-redux';
 export default connect(cb1, cb2)(MyLovelyComponent)
 ```
+- withRouter
+```
+withRouter(connect(cb1, cb2)(MyComponent))
+```
  - asFeaturePartial
 ```
 import {asFeaturePartial,featurePoints} from "Feature"
-export default asFeaturePartial(featurePoints.myFeatureName, name, decorators)( MyLovelyComponent)
+export default asFeaturePartial(featurePoints.myFeatureName, name, decorators)(MyLovelyComponent)//can be redix component or react component, and you can do redux's connect inline like in withRouter above. 
 ```
 
 to get our first feature to work we have to export an array of feature partials which together become a feature. 
@@ -133,3 +137,362 @@ subscriberRoleToFeaturesMap[subscribers[1]][roles[0]] = [
 ```
 
 now if you restart the app and login as the user you registed your feature for(they are in the same order as thier array positions) you should see your feature!
+
+##### multiple feature partials and registering reducers
+a feature can be a combination of any number of components registered to any feature points. One of the availible feature points is registerReducer. This feature point allows you to register a reducer that will manage state keyed under the feature name you give it in the asFeaturePartial function. 
+
+you inject it just like any other feature partial, but its destination has to be the registerReducer featurePoint.
+```
+const myReducer = (state = defaultState,action)=>{
+    const newState = Object.assign({},state);
+    switch (action.type){
+        case actionTypes.doThing:
+            newState.type = action.payload;
+            return newState;
+        default:
+            return state
+    } 
+}
+
+export default asFeaturePartial(featurePoints.registerReducers,"myReducer")(myReducer)
+```
+
+and then in the featurePackage.js
+```
+import MyReducer from './reducers/redditReducer';
+import MyComponent from "./components/displayRedditListContainer"
+export default [
+    MyReducer,
+    MyComponent,
+]
+```
+
+if you want your components to get state from the state that that reducer manages you just have to create a redux container to inject state into your component. the state will be keyed under your reducers name
+```
+
+export const mapStateToProps = (state, ownProps) => {
+    return {
+        someState: state.myReducer.someState,
+    }
+```
+
+#### decorators an asDecoration
+decorators must be an object of the form 
+```
+{name:string,props:{literally:anything(you).want, color:"green"}}
+```
+Decorators are activated by name and must be registered in a decorators.json in the root of your feature like so
+```
+// frontend/features/myFeature/decorators.json
+{
+  "decoratorName":"decoratorName"
+}
+```
+decorators are registered to featurepartials in the asFeaturePartial function as the third parameter like so
+```
+export default asFeaturePartial(featurePoints.destination,"myFeaturepartial",[myDecorator1,myDecorator2])(MyComponent);
+```
+
+decorators are themable, which means that if you have multiple components receiving decorators you can coordinate them by name. For example you could have 'usa' decorators that you register to three different components and each one displays the color injected in as a prop. 
+```
+{name:decorators.usa,props:{color:"white"}}}
+{name:decorators.usa,props:{color:"red"}}}
+{name:decorators.usa,props:{color:"blue"}}}
+```
+decorators get merged, so if you inject the following
+```
+{name:decorators.colored,props:{color:"white"}}}
+{name:decorators.colored,props:{backgroundColor:"red"}}}
+{name:decorators.colored,props:{fetchData:"green"}}}
+{name:decorators.colored,props:{fetchData:function(){}}}}
+
+```
+you should expect the props given to the final component to look like 
+```
+{props:{color:"white",backgroundColor:"red",fetchData:function(){}}}
+```
+
+a featurePartial itself can be made to be only rendered with a decoration flag. asFeaturePartial() returns a function, you can either call it with the component your wrapping or call asDecoration(decoratorName)(component) like so
+```
+export default asFeaturePartial(featurePoints.dest).asDecoration(decoratorNames.decorator)(MyComponent)
+```
+
+and then that featurePartial will only be active when its decorator flag is active. 
+
+## putting it together tutorial 
+I have already made a reddit feature which we will ad decorators to. right now it has three feature partials:
+```
+import RedditControls from "./components/redditControlsContainer";
+import RedditReducer from './reducers/redditReducer';
+import RedditListView from "./components/displayRedditListContainer"
+
+export default [
+    RedditControls,
+    RedditReducer,
+    RedditListView
+]
+```
+one is a reducer which adds a list,subreddit, and type fields in state.reddit, the controls component has a  button to fetch a list of articles from reddit and the list view renders them. 
+
+first lets add a single decorator to add a button to change the way that the controls component fetches items from reddit. For the purposes of this tutorial I will make a redux connected component, but you could just add to the container on <RedditControls> to achieve the same thing in the short term. 
+
+lets start by making that change type button. I am going to create the container and button in one file
+```
+import React from 'react';
+import { connect } from 'react-redux';
+import {changeRedditType} from "../reducers/redditActions";
+
+const ChangeTypeButton = ({currentType,changeType})=>(
+    <div>
+        <input value={currentType} onChange={(e)=>changeType(e.target.value)}/>
+    </div>
+)
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        changeType:(newType)=>dispatch(changeRedditType(newType))
+    }
+}
+
+const mapStateToProps = (state, ownProps) => {
+    return {
+        currentType:state.reddit.type
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(ChangeTypeButton);
+```
+so whats going on here is that I have a ChangeTypeButton component which takes in a currentType and a changeTypeCallback. It displays an input which onChange takes the value of the inputs and calls the changeType callback with the value.
+
+The container, the object which comes out of the connect()() invocation, will inject the currentType from the runtime redux state and a changeType which dispatches an action with data. 
+
+now lets add a decoration. First make an enum as decorators.json
+```
+// frontend/features/decoratedRedditTutorial/decorators.json
+{
+  "typeChange":"typeChange"
+}
+```
+then make a decorator and register it to the featurePartial:
+```
+/// frontend/features/decoratedRedditTutorial/components/redditControlsContainer.js
+const decorator = {
+    name:decoratorNames.typeChange,
+    props:{changeTypeControl:true}
+}
+export default asFeaturePartial(featurePoints.tabberView,"reddit",[decorator])(connect(mapStateToProps, mapDispatchToProps)(RedditControls));
+```
+now go to redditControls.jsx, import our ChangeTypeButton and render it if changeTypeControl comes in as true. 
+```
+import React from 'react';
+import ReactDom from 'react-dom'
+import {asFeaturePartial,featurePoints} from "Feature";
+import ChangeTypeButton from "../decorators/changeTypeButton"
+
+export default ({getRedditList,subreddit,type, changeTypeControl = false})=>(
+    <section >
+        {changeTypeControl? <ChangeTypeButton/> : null}
+        <button onClick={()=>getRedditList(subreddit,type)}>get reddit</button>
+    </section>
+)
+```
+
+now run webpack and run your tests. If everything is passing you have a feature decorator fully ready to go and you just need to register the decorator to a user.
+
+go to the subscriberRolesFeatures map and add in the feature and decorator, should look something like:
+```
+]subscriberRoleToFeaturesMap[subscribers[0]][roles[0]] = [
+    FeatureDescriptor(featureNames.list),
+    FeatureDescriptor(featureNames.decoratedRedditTutorial)
+]
+subscriberRoleToFeaturesMap[subscribers[0]][roles[1]] = [
+    FeatureDescriptor(featureNames.list),
+    FeatureDescriptor(featureNames.decoratedRedditTutorial,
+        [
+            decorators.decoratedRedditTutorial.typeChange
+        ]
+    ),
+    ]
+```
+so sub[0]role[1] gets the decoratatedReddit feature with a decorator, and subscriber[0]roles[0] gets the undecorated version. Make sure to restart your app and try logging in as those users. 
+
+this works but its not very 'reacty' of us. We are injecting a string into a component to tell it whether to render another component, why not just inject the component itself?
+
+lets change around the decorator defination and the control component:
+```
+...
+import ChangeTypeButton from "../decorators/changeTypeButton"
+
+const decorator = {
+    name:decoratorNames.typeChange,
+    props:{ControlButton:ChangeTypeButton}
+}
+...
+export default ({getRedditList,subreddit,type, ControlButton = ()=>null})=> {
+    return (
+        <section>
+            <ControlButton/>
+            <button onClick={() => getRedditList(subreddit, type)}>get reddit</button>
+        </section>
+    )
+}
+...
+```
+*note that the componentName in JSX tags is capitalized. components inside JSX tags must ALWAYS BE CAPITALIZED*
+
+try running webpack and logging in again, you should see the same results. 
+
+now lets add on a menu into the header.
+here is a basic menu that I am sending to the header wrapped in a redux container which we will fill out next
+```
+import React from 'react';
+import { connect } from 'react-redux';
+import {asFeaturePartial,featurePoints} from "Feature";
+import decorators from "../decorators.json"
+import style from "./headerMenu.scss"
+class HeaderMenu extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            open:false
+        }
+        this.toggleOpen = this.toggleOpen.bind(this);
+    }
+    toggleOpen(e) {
+        this.setState({open:!this.state.open})
+    }
+    render() {
+        return (
+            <div className={"headerMenu"} >
+                <div onClick={this.toggleOpen} >RedditMenu</div>
+                {this.state.open? this.menuOptions():null}
+            </div>
+        )
+    }
+    menuOptions(){
+        return(
+            <div> 
+                <div>menuOption</div>
+                <div>menuOption</div>
+            </div>
+        )
+    }
+}
+
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+    }
+}
+
+const mapStateToProps = (state, ownProps) => {
+    return {
+    }
+}
+export default asFeaturePartial(featurePoints.HeaderMenu)(connect(mapStateToProps, mapDispatchToProps)(HeaderMenu))
+```
+```
+/// headerMenu.scss
+.headerMenu{
+  background-color: white;
+}
+```
+to get it to display all we have to do is add it to the featurePackage.json and it should display for all users that have the decoratedReddit feature toggled
+```
+import RedditControlsContainerPartial from "./components/redditControlsContainer";
+import RedditReducer from './reducers/redditReducer';
+import RedditListView from "./components/displayRedditListContainer";
+import RedditMenu from "./components/headerMenu"
+export default [
+    RedditControlsContainerPartial,
+    RedditReducer,
+    RedditListView,
+    RedditMenu
+]
+```
+
+now lets make it so that it only appears for some clients. for that to happen we have to export Redditmenu as a decoration. Lets register a new decorator name and apply asDecoration to RedditMenu:
+```
+//decorators.json
+{
+  "typeChange":"typeChange",
+  "menu":"menu"
+}
+...
+export default asFeaturePartial(featurePoints.HeaderMenu)
+.asDecoration(decorators.menu)
+(connect(mapStateToProps, mapDispatchToProps)(HeaderMenu))
+...
+```
+
+now run webpack to automatically register our new feature decorator and toggle it on for some users
+```
+subscriberRoleToFeaturesMap[subscribers[0]][roles[2]] = [
+    FeatureDescriptor(featureNames.list),
+    FeatureDescriptor(featureNames.decoratedRedditTutorial,
+        [
+            decorators.decoratedRedditTutorial.typeChange,
+            decorators.decoratedRedditTutorial.menu
+        ]
+    )
+    ]
+```
+now restart the server and test it out.
+
+lastly lets make one of the menu buttons open a modal. The app already has a modal component connected to redux, we just have to call setModal(componentToDisplay) and a component will display in the modal. The modal injects a onClose() into whatever it dispalys to allow it to close. 
+
+first lets inject the props into the menu
+```
+import {setModalComponent} from "baseRedux/actions/uiActions/uiActions"
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        openModalWith:(component)=>dispatch(setModalComponent(component)),
+    }
+}
+```
+
+now lets use those in the menu component, change one of the this.menuOptions() function like so
+```
+menuOptions(){
+        const configMenu = <ConfigMenu/>
+        return(
+            <div> 
+                <div onClick={()=>this.props.openModalWith(configMenu)}>redditConfig</div>
+                <div>menuOption</div>
+            </div>
+        )
+    }
+```
+now all we have to do is make that ConfigMenu component
+```
+import {changeSubReddit} from "features/decoratedRedditTutorial/reducers/redditActions";
+import React from 'react';
+import { connect } from 'react-redux';
+import ChangeType from "../decorators/changeTypeButton"
+const ConfigMenu = ({subreddit, changeSubReddit, close})=>{console.log({subreddit, changeSubReddit, close});return(
+    <section className={"configMenu"}>
+        <h1> change subreddit</h1>
+        <input value={subreddit} onChange={(e)=>changeSubReddit(e.target.value)}/>
+        <h1> change type</h1>
+        <ChangeType/>
+        <h1 onClick={close}>[x]</h1>
+    </section>
+)}
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        changeSubReddit: (newSub)=>dispatch(changeSubReddit(newSub)),
+    }
+}
+
+const mapStateToProps = (state, ownProps) => {
+    return {
+        subreddit:state.reddit.subreddit
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ConfigMenu);
+```
+
+now import it into the menu, webpack, run tests, and check that it works.
+
+now you have reddit features, decorators, and a featurePartial decoration.

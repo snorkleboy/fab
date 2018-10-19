@@ -31,7 +31,7 @@ function mapFeaturesToFeaturePoints(loadedFeatures){
 
     loadedFeatures.forEach((feature,i)=>{
         
-        const decoratorNames = feature._decoratorsToUse;
+        const decoratorNames = feature._decoratorsToUse || [];
         feature.forEach((componentPackageWrapper,k)=>{
             const componentPackage = componentPackageWrapper.componentPackage;
             if (!componentPackage.asDecorator || decoratorNames.includes(componentPackage.asDecorator)){

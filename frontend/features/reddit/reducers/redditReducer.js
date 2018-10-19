@@ -22,9 +22,15 @@ const redditReducer = (state = _redditReducer(),action)=>{
             }))
             newState.list = list;
             return newState;
+        case actionTypes.changeRedditType:
+            newState.type = action.payload;
+            return newState;
+        case actionTypes.changeSubReddit:
+            newState.subreddit = action.payload;
+            return newState;
         default:
             return state
-    } 
+    }
 }
 
 export default asFeaturePartial(featurePoints.registerReducers,"reddit")(redditReducer)

@@ -1,8 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {asFeaturePartial,featurePoints} from "Feature";
 import {changeRedditType} from "../reducers/redditActions";
-import decoratorNames from "../decorators.json"
 
 
 const ChangeTypeButton = ({currentType,changeType})=>(

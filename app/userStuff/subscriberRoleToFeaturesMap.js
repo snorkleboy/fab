@@ -31,6 +31,12 @@ subscriberRoleToFeaturesMap[subscribers[0]][roles[1]] = [
     ),]
 subscriberRoleToFeaturesMap[subscribers[0]][roles[2]] = [
     FeatureDescriptor(featureNames.list),
+    FeatureDescriptor(featureNames.decoratedRedditTutorial,
+        [
+            decorators.decoratedRedditTutorial.typeChange,
+            decorators.decoratedRedditTutorial.menu
+        ]
+    ),
     FeatureDescriptor(featureNames.list)
 ]
 

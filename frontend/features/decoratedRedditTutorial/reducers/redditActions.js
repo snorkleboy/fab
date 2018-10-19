@@ -1,7 +1,12 @@
 export const actionTypes = {
     "receiveRedditList":"RECEIVE_REDDIT_LIST",
-    "changeRedditType":"CHANGE_REDDIT_TYPE"
+    "changeRedditType":"CHANGE_REDDIT_TYPE",
+    "changeSubReddit":"CHANGE_SUB_REDDIT"
 }
+export const changeSubReddit = (payload)=>({
+    payload,
+    type:actionTypes.changeSubReddit
+})
 export const receiveRedditList = (payload)=>({
     payload,
     type:actionTypes.receiveRedditList
