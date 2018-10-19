@@ -7,7 +7,7 @@
 
 # tutorial
 
-##### I just want to get something on the screen
+### I just want to get something on the screen
 - create a new directory in ./frontend/features. The directory name will be your features name. 
 - create a file named featurePackage.js (this file is required for any feature)
 - create components
@@ -66,13 +66,13 @@ const SimpleFeaturePartialRenderer = ({FeaturePointChildren})=>(
 ```
 where FeatureProvider is a redux connected component which injects dynamically loaded components and some props which can act as decorators. 
 
-Every featurePoint is named and registered in a featurePoints enum which you can import anywhere as ```import {featurePoints} from "Feature"```. Then when you export your components you just need to register them as going to that feature point using the handy dandy ```{import {asFeaturePartial} from "Feature"```
+Every featurePoint is named and registered in a featurePoints enum which you can import anywhere as ```import {featurePoints} from "Feature"```. Then when you export your components you just need to register them as going to that feature point using the handy dandy ```import {asFeaturePartial} from "Feature"```
 
 then you create a featurePackage.js which exports an array of registered components, and finally toggle your feature name on for particular users.
 
-This pattern also supports decorators; any-purpose full js react-props which you can pass into your components using decorator flags. You should declare the names any decorators used is a decorators.js file to be able to accuretely reference them serverSide from the features enum. Decorators are 'themable', as in different decorators can be given the same name on different featurePartials and be activated by the same decorator toggle, or the same props can be given to differnt components under different (or same) decorator toggles. 
+This pattern also supports decorators; any-purpose full js react-props which you can pass into your components using decorator flags. You should declare the names of any decorators used is a decorators.json file to be able to accuretely reference them serverSide from the features enum. Decorators are 'themable', as in different decorators can be given the same name on different featurePartials and be activated by the same decorator toggle, or the same props can be given to differnt components under different (or same) decorator toggles. 
 
-# getting started
+## getting started
 lets start out by creating a directory for your feature, I will use tutorialStartingOut.
 create a file with a component and export it, for example 
 ```
@@ -102,7 +102,7 @@ export default [
 ]
 ```
 and run the tests. You should now be passing the first test. All we need to do now is register the component to a featurePoint
-###### asFeaturePartial
+### asFeaturePartial
 asFeaturePartial helps you wrap your components properly, it is used similar to Redux' connect function or React routers withRouter:
  - connect:
 ```
@@ -182,7 +182,7 @@ export const mapStateToProps = (state, ownProps) => {
     }
 ```
 
-#### decorators an asDecoration
+### decorators an asDecoration
 decorators must be an object of the form 
 ```
 {name:string,props:{literally:anything(you).want, color:"green"}}
