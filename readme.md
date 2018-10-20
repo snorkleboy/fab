@@ -347,7 +347,8 @@ export default ({getRedditList,subreddit,type, ControlButton = ()=>null})=> {
 
 try running webpack and logging in again, you should see the same results. 
 
-now lets add on a menu into the header.
+Now lets move that functionality into a seperate menu.
+
 here is a basic menu that I am sending to the header wrapped in a redux container which we will fill out next
 ```
 import React from 'react';
@@ -502,3 +503,116 @@ export default connect(mapStateToProps, mapDispatchToProps)(ConfigMenu);
 now import it into the menu, webpack, run tests, and check that it works.
 
 now you have reddit features, decorators, and a featurePartial decoration.
+
+Lets do just two more things. First lets use the ChangeType button more flexibly and replace that first input field, and then lets make the menu options for the menu come in as decorators. 
+
+ lets also it off as a decorator of the Controls component. 
+```
+export default asFeaturePartial(featurePoints.tabberView,"reddit")(connect(mapStateToProps, mapDispatchToProps)(RedditControls));
+```
+you have to worry about unregistering it in the user=>feature map or the decorators.json file, but if you dont plan on using it it would be cleaner to scrub it. 
+
+If you look at the changeType button, the underlying component is build to recieve a value and a callback and the redux container injects it in. lets get rid of its redux container and instead pass those props in from the ConfigMenu.
+first copy its redux container properties over to the ConfigMenus container. The ConfigMenus container should now look like
+```
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        changeSubReddit: (newSub)=>dispatch(changeSubReddit(newSub)),
+        changeType:(newType)=>dispatch(changeRedditType(newType))
+    }
+}
+
+const mapStateToProps = (state, ownProps) => {
+    return {
+        subreddit:state.reddit.subreddit,
+        currentType:state.reddit.type
+    }
+}
+```
+the change typeButton ( changed the names to be more semantic)
+```
+export default ({value,onChange})=>(
+    <div>
+        <input value={value} onChange={(e)=>onChange(e.target.value)}/>
+    </div>
+)
+...
+/// (when I start passing in many props I generally stop destructuring them and access them by key value on props)
+const ConfigMenu = (props)=>(
+    <section className={"configMenu"}>
+        <h1> change subreddit</h1>
+        <ChangeType value={props.subreddit} onChange={(e)=>props.changeSubReddit(e.target.value)}/>
+        <h1> change type</h1>
+        <ChangeType value={props.currentType} onChange={(e)=>props.changeType(e.target.value)} />
+        <h1 onClick={props.close}>[x]</h1>
+    </section>
+)
+```
+and now the config menu can use it in a extensible way (altough as you can see in this case its just a wrapper around a input tag you can apply common styling and labels,etc).
+
+now lets convert the menu options into decorators.  Right now in the menuOptions() function we declare a <Config/> component and then pass it into the openModel callback. We can easily pass it in as a component. Lets first register it in the deocrators.json and remove the now defunct typeChange.
+```
+// decorators.json
+{
+  "menu":"menu",
+  "config":"config"
+}
+```
+and now lets turn our <Config/> component into a decorator. 
+```
+const menuDecorator = {
+    name:decorators.config,
+    props:{
+        menuOptions:{
+            redditConfig:<ConfigMenu/>
+        }
+    
+    }
+}
+    
+```
+if we want to register more menuOption decorators later, we can key them under menuOptions and have them merged together in the order that we register them in the user=>feature map.
+
+add the menuDecorator as a decorator to the headerMenu
+```
+export default asFeaturePartial(featurePoints.HeaderMenu,"",[menuDecorator])
+    .asDecoration(decorators.menu)(connect(mapStateToProps, mapDispatchToProps)(HeaderMenu))
+```
+
+Okay so now we can expect to receive a menuOptions prop, lets use that in the menuOptions method of the menu
+```
+menuOptions(){
+    const MenuOptions = this.props.menuOptions || []; //setting a default value 
+    return(
+        <div>
+            <div>menuOption</div>
+            {Object.keys(MenuOptions).map(optionName=> (
+                <div onClick={() => this.props.openModalWith(MenuOptions[optionName])}>{optionName}</div>
+            ))}
+        </div>
+    )
+}
+```
+were using the key of the menuOptions object to give the menu options a name and the component it comes with gets sent to the modal on click. Powerful stuff. 
+
+webpack and toggle it on in the user=> feature map and try your tests and  
+```
+subscriberRoleToFeaturesMap[subscribers[0]][roles[1]] = [
+    FeatureDescriptor(featureNames.list),
+    FeatureDescriptor(featureNames.decoratedRedditTutorial,
+        [
+            decorators.decoratedRedditTutorial.menu
+        ]
+    ),]
+subscriberRoleToFeaturesMap[subscribers[0]][roles[2]] = [
+    FeatureDescriptor(featureNames.list),
+    FeatureDescriptor(featureNames.decoratedRedditTutorial,
+        [
+            decorators.decoratedRedditTutorial.config,
+            decorators.decoratedRedditTutorial.menu
+        ]
+    ),
+    FeatureDescriptor(featureNames.list)
+]
+```
+restart the server and try it out. 

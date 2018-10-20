@@ -11,7 +11,6 @@ const quickTest = [
     asFeaturePartial(featurePoints.HeaderMenu,"displayName")(component),
     asFeaturePartial(featurePoints.registerReducers,"newReducer")(reducer)
 ]
-console.log({quickTest},JSON.stringify(quickTest));
 export default quickTest;
 
 

@@ -23,4 +23,4 @@ const decorator = {
     name:decoratorNames.typeChange,
     props:{ControlButton:ChangeTypeButton}
 }
-export default asFeaturePartial(featurePoints.tabberView,"reddit",[decorator])(connect(mapStateToProps, mapDispatchToProps)(RedditControls));
+export default asFeaturePartial(featurePoints.tabberView,"reddit")(connect(mapStateToProps, mapDispatchToProps)(RedditControls));

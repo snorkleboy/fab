@@ -1,25 +1,27 @@
-import {changeSubReddit} from "features/decoratedRedditTutorial/reducers/redditActions";
+import {changeRedditType, changeSubReddit} from "features/decoratedRedditTutorial/reducers/redditActions";
 import React from 'react';
 import { connect } from 'react-redux';
 import ChangeType from "../decorators/changeTypeButton"
-const ConfigMenu = ({subreddit, changeSubReddit, close})=>{console.log({subreddit, changeSubReddit, close});return(
+const ConfigMenu = (props)=>(
     <section className={"configMenu"}>
         <h1> change subreddit</h1>
-        <input value={subreddit} onChange={(e)=>changeSubReddit(e.target.value)}/>
+        <ChangeType value={props.subreddit} onChange={(e)=>props.changeSubReddit(e.target.value)}/>
         <h1> change type</h1>
-        <ChangeType/>
-        <h1 onClick={close}>[x]</h1>
+        <ChangeType value={props.currentType} onChange={(e)=>props.changeType(e.target.value)} />
+        <h1 onClick={props.close}>[x]</h1>
     </section>
-)}
+)
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         changeSubReddit: (newSub)=>dispatch(changeSubReddit(newSub)),
+        changeType:(newType)=>dispatch(changeRedditType(newType))
     }
 }
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        subreddit:state.reddit.subreddit
+        subreddit:state.reddit.subreddit,
+        currentType:state.reddit.type
     }
 }
 

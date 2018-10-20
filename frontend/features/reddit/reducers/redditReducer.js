@@ -8,10 +8,8 @@ const _redditReducer = ()=>({
 })
 const redditReducer = (state = _redditReducer(),action)=>{
     const newState = Object.assign({},state);
-    console.log({state,action,actionTypes});
     switch (action.type){
         case actionTypes.receiveRedditList:
-            console.log({action});
             const list = action.payload.data.children.map(child=>({
                 author:child.data.author,
                 sub:child.data.subreddit,

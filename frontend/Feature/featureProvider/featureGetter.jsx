@@ -61,7 +61,6 @@ function mapFeaturesToFeaturePoints(loadedFeatures){
         reducerPackages.forEach(redPackage=>{
             reducers[redPackage.name]  = redPackage.component
         })
-        console.log({reducerPackages,reducers,featurePointToComponentMap})
         reducerReplacer.injectReducers(reducers)
     }
     return featurePointToComponentMap

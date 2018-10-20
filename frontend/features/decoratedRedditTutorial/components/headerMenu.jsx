@@ -26,11 +26,13 @@ class HeaderMenu extends React.Component {
         )
     }
     menuOptions(){
-        const configMenu = <ConfigMenu subreddit={this.props.subreddit} changeSubReddit={this.props.changeSubReddit}/>
+        const MenuOptions = this.props.menuOptions || [];
         return(
-            <div> 
-                <div onClick={()=>this.props.openModalWith(configMenu)}>redditConfig</div>
+            <div>
                 <div>menuOption</div>
+                {Object.keys(MenuOptions).map(optionName=> (
+                    <div onClick={() => this.props.openModalWith(MenuOptions[optionName])}>{optionName}</div>
+                ))}
             </div>
         )
     }
@@ -48,4 +50,17 @@ const mapStateToProps = (state, ownProps) => {
     }
 }
 
-export default asFeaturePartial(featurePoints.HeaderMenu).asDecoration(decorators.menu)(connect(mapStateToProps, mapDispatchToProps)(HeaderMenu))
+const menuDecorator = 
+{
+    name:decorators.config,
+    props:{
+        menuOptions:{
+            redditConfig:<ConfigMenu/>
+        }
+    
+    }
+}
+    
+
+export default asFeaturePartial(featurePoints.HeaderMenu,"",[menuDecorator])
+    .asDecoration(decorators.menu)(connect(mapStateToProps, mapDispatchToProps)(HeaderMenu))
