@@ -44,7 +44,6 @@ subscriberRoleToFeaturesMap[subscribers[0]][roles[2]] = [
 ///
 ////////subscriber2
 subscriberRoleToFeaturesMap[subscribers[1]][roles[0]] = [
-    FeatureDescriptor(featureNames.tutorialStartingOut),
     FeatureDescriptor(featureNames.list),
     FeatureDescriptor(featureNames.filters,
         [
@@ -57,19 +56,21 @@ subscriberRoleToFeaturesMap[subscribers[1]][roles[1]] = [
     FeatureDescriptor(featureNames.filters,
         [
             decorators.filters.Default,
-            decorators.filters.Weather,
-            decorators.filters.randomDec
+            decorators.filters.Weather
         ]
-    ),
+    )
 ]
 subscriberRoleToFeaturesMap[subscribers[1]][roles[2]] = [
     FeatureDescriptor(featureNames.list),
     FeatureDescriptor(featureNames.filters,
         [
             decorators.filters.Default,
-            decorators.filters.Weather
+            decorators.filters.Weather,
+            decorators.filters.randomDec
         ]
     ),
+    FeatureDescriptor(featureNames.decoratedRedditTutorial)
+
 ]
 
 

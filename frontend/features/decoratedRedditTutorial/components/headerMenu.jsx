@@ -18,6 +18,7 @@ class HeaderMenu extends React.Component {
         this.setState({open:!this.state.open})
     }
     render() {
+        console.log("HEADER MENU");
         return (
             <div className={"headerMenu"} >
                 <div onClick={this.toggleOpen} >RedditMenu</div>
